@@ -3,6 +3,8 @@
 namespace Database\Seeders;
 
 use App\Models\User;
+use App\Models\Schedule;
+use App\Models\Budget;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -13,11 +15,19 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // User::factory(10)->create();
+         //User::factory(10)->create();
 
-        User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
+        $this->call([
+            UserSeeder::class,
+            ScheduleSeeder::class,
+            BudgetSeeder::class,
+            SupplySeeder::class,
+            BudgetItemSeeder::class,
         ]);
+
+        //User::factory()->create([
+          //  'name' => 'Test User',
+            //'email' => 'test@example.com',
+        //]);
     }
 }

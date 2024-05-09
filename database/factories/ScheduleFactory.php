@@ -3,7 +3,6 @@
 namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use App\Models\User;
 
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Schedule>
@@ -21,7 +20,6 @@ class ScheduleFactory extends Factory
             "day" => fake()->dateTime(),
             "open" => fake()->dateTimeBetween('-1 week', '+1 week'),
             "close" => fake()->dateTimeBetween('-1 week', '+1 week'),
-            "user_id" => $this->users()->random(),
         ];
     }
 }

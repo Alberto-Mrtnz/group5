@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\Schedule;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use App\Models\User;
 
@@ -11,7 +12,11 @@ use App\Models\User;
 class SupplyFactory extends Factory
 {
     public function users() {
-        return User::pluck("id");
+        return once(fn() => User::pluck("id"));
+    }
+
+    public function schedules() {
+        return once(fn() => Schedule::pluck('id'));
     }
 
     /**
@@ -25,9 +30,11 @@ class SupplyFactory extends Factory
             "name" => fake()->word(),
             "quantity" => fake()->randomNumber(3, false),
             "price" => fake()->randomFloat(),
-            "description" => fake()->paragraphs(),
+            "description" => fake()->paragraphs(3, true),
             "address" => fake()->macAddress(),
             "user_id" => $this->users()->random(),
+            "is_service" => fake()->boolean(),
+            "schedule_id" => $this->schedules()->random(),
         ];
     }
 }

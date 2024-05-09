@@ -20,7 +20,6 @@ class BudgetFactory extends Factory
             "name" => fake()->word(),
             "total_price" => fake()->randomFloat(),
             "date" => fake()->dateTime(),
-            "user_id" => $this->users()->random(),
         ];
     }
 }

@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('name');
             $table->integer('quantity');
             $table->integer('price');
-            $table->string('description');
+            $table->text('description');
             $table->boolean('is_service');
             $table->string('address');
             $table->foreignIdFor(User::class)->constrained();

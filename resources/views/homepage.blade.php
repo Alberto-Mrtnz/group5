@@ -1,5 +1,5 @@
 <x-layout>
-<div 
+<div>
 
 </div>
 </x-layout>

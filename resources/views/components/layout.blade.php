@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style/sheet">
     <title>Document</title>
 </head>
-<body>
+<body class="bg-gray-100">
     {{$slot}}
 </body>
 </html>

@@ -1,7 +1,7 @@
 <x-layout>
     <div class="grid grid-cols-3 place-items-center">
         <div class="" style="">
-            <img src="{{ asset('img/fondo-homepage.jpg') }}" class="h-screen bg-right">
+            <img src="{{ asset('img/LOGIN.jpg') }}" class="h-screen bg-right">
         </div>
 
         <div class="col-span-2">

@@ -14,6 +14,8 @@
             <x-input titulo="Email" type="email" nombre="email"></x-input>
             <x-input titulo="Contraseña" type="password" nombre="contraseña"></x-input>
             <x-input titulo="Fecha de nacimiento" type="date" nombre="fecha de nacimiento"></x-input>
+            <x-input titulo="Dueño de servicio" type="radio" nombre="dueño de servicio"></x-input>
+            <x-input titulo="Cliente" type="radio" nombre="cliente"></x-input>
 
             <div>
                 <x-buttom class="size-20">REGISTER</x-buttom>

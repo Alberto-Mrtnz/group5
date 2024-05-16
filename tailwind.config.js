@@ -1,3 +1,5 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -7,7 +9,10 @@ export default {
   ],
   theme: {
     extend: {
-      
+      fontFamily: {
+        'moon': ['Moon Dance', ...defaultTheme.fontFamily.sans],
+        'montserrat': ['Montserrat Alternates', ...defaultTheme.fontFamily.sans]
+      }
     },
   },
   plugins: [],

@@ -1,6 +1,6 @@
 
-<div class="text-right">
-    <button>
+<div class="text-right font-montserrat">
+    <button class="italic">
     {{$slot}}
     </button>
 </div>

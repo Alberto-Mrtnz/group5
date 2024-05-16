@@ -6,7 +6,7 @@
     </div>
 
     <div class="col-span-2">
-        <h1 class="mb-11 text-2xl text-center font-moon text-5xl">EVYS</h1>
+        <h1 class="mb-11 text-center font-moon text-5xl">EVYS</h1>
         <form action="/register" method="POST">
         @csrf
 
@@ -15,9 +15,12 @@
             <x-input titulo="Contraseña" type="password" nombre="contraseña"></x-input>
             <x-input titulo="Fecha de nacimiento" type="date" nombre="fecha de nacimiento"></x-input>
 
-            <div>
-                <x-buttom class="size-20">REGISTER</x-buttom>
+            <div class="inline-flex">
+                <x-inputra titulo="Dueño"></x-inputra>
+                <x-inputra titulo="Cliente"></x-inputra>
             </div>
+            
+            <x-buttom class="size-20">REGISTER</x-buttom>
 
         </form>
     </div>

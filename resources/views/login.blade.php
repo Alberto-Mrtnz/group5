@@ -2,7 +2,6 @@
     <div class="grid grid-cols-3 place-items-center">
 
         <div class="" style="">
-            <x-buttom class="flex justify-end items-end relative h-[calc(100vh-80px)]">LOGIN</x-buttom>
             <img src="{{ asset('img/LOGIN.jpg') }}" class="flex justify-around object-cover h-full w-full ">
         </div>
 

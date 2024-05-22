@@ -13,9 +13,14 @@
                 <x-input type="text" titulo="User" name="email" />
                 <x-input type="password" titulo="Password" name="password" />
 
+
                 <x-buttomsd>Forgot password</x-buttomsd>
 
-                <x-buttom>LOGIN</x-buttom>
+                <div class="text-right">
+                    <x-buttom2 type="push" titulo="Forgot password" nombre="Forgot password" />
+                </div>
+
+                <x-buttom type="submit">LOGIN</x-buttom>
             </form>
         </div>
     </div>

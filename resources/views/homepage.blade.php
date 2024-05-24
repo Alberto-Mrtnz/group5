@@ -1,7 +1,7 @@
  <x-layout>
 <div>
 
-    <nav class="py-6 relative">
+    <nav class="bg-inherit py-6 relative">
         <div class="container mx-auto flex">
 
             <h1 class="text-3xl font-moon flex-grow">EVYS</h1>
@@ -20,8 +20,21 @@
         </div>
     </nav>
 
-    <div class="" style="">
+    <div class="relative w-full h-screen">
         <img src="{{ asset('img/fondo-homepage.jpg') }}" class="h-full w-full ">
+        <div class="absolute inset-0 flex items-center justify-center mt-72">
+            <h2 class="font-moon text-5xl text-white">Donde encuentras los mejores lugares para tus eventos</h2>
+        </div>
+    </div>
+
+    <div class="bg-gray-200 grid grid-cols-5">
+        <div class="col-span-3 justify-center mx-20">
+            <h2 class="font-montserrat font-semibold text-center">¿Quiénes somos?</h2>
+            <h2 class="font-montserrat">Facilitar el proceso de organización de eventos y celebraciones a los salvadoreños mediante el desarrollo de una plataforma online que optimice la búsqueda y contratación de servicios relacionados con eventos para que la gente pueda ahorrar dinero y personalizar sus eventos por su cuenta.</h2>
+        </div>
+        <div class="col-span-2">
+            <img src="{{ asset('img/salones-para-eventos.png') }}" class="my-36 mr-12">
+        </div>
     </div>
 
 </div>

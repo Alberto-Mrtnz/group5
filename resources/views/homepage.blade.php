@@ -1,7 +1,6 @@
  <x-layout>
-<div>
-
-    <nav class="bg-inherit py-6 relative">
+<div class="relative">
+    <nav class="bg-inherit py-6 fixed w-full top-0">
         <div class="container mx-auto flex">
 
             <h1 class="text-3xl font-moon flex-grow">EVYS</h1>
@@ -20,9 +19,9 @@
         </div>
     </nav>
 
-    <div class="relative w-full h-screen">
+    <div class="w-full h-screen mt-50">
         <img src="{{ asset('img/fondo-homepage.jpg') }}" class="h-full w-full ">
-        <div class="absolute inset-0 flex items-center justify-center mt-72">
+        <div class="absolute inset-0 flex items-center justify-center">
             <h2 class="font-moon text-5xl text-white">Donde encuentras los mejores lugares para tus eventos</h2>
         </div>
     </div>

@@ -27,12 +27,23 @@
     </div>
 
     <div class="bg-gray-200 grid grid-cols-5">
-        <div class="col-span-3 justify-center  ">
-            <h2 class="font-montserrat font-semibold text-center">¿Quiénes somos?</h2>
-            <h2 class="font-montserrat">Facilitar el proceso de organización de eventos y celebraciones a los salvadoreños mediante el desarrollo de una plataforma online que optimice la búsqueda y contratación de servicios relacionados con eventos para que la gente pueda ahorrar dinero y personalizar sus eventos por su cuenta.</h2>
+        <div class="col-span-3 justify-center text-center px-44 py-44">
+            <h2 class="font-montserrat font-semibold text-center text-2xl pb-2.5">¿Quiénes somos?</h2>
+            <h2 class="font-montserrat text-xl">Facilitar el proceso de organización de eventos y celebraciones a los salvadoreños mediante el desarrollo de una plataforma online que optimice la búsqueda y contratación de servicios relacionados con eventos para que la gente pueda ahorrar dinero y personalizar sus eventos por su cuenta.</h2>
         </div>
         <div class="col-span-2">
             <img src="{{ asset('img/salones-para-eventos.png') }}" class="my-36 mr-12">
+        </div>
+    </div>
+
+    <div class="bg-gray-300">
+        <h1 class="font-montserrat font-semibold text-center text-2xl">Nuestros servicios</h1>
+        <div class="slider-box">
+            <ul>
+                <li>
+                    <img src="{{ asset('img/VENIU.jpg') }}">
+                </li>
+            </ul>
         </div>
     </div>
 

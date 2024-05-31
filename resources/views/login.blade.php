@@ -7,7 +7,7 @@
 
         <div class="col-span-2">
             <h1 class="mb-11 text-5xl text-center font-moon">EVYS</h1>
-            <form action="login" method="POST">
+            <form action="/login" method="POST">
                 @csrf
 
                 <x-input type="text" titulo="User" name="email" />

@@ -1,11 +1,8 @@
-<<<<<<< HEAD
-<div class="mt-11 font-montserrat text-2xl text-center">
-<button class="bg-stone-300 rounded-lg font-medium p-2">
-=======
+<div>
 
-<div class=" mt-11 font-montserrat text-2xl text-center">
-<button class="bg-stone-300 rounded-lg font-medium p-2" {{ $attributes }}>
->>>>>>> fcf5e5fb002919c2679cb304df60903c1affca99
-{{$slot}}
+    <button class="bg-stone-300 rounded-lg font-medium p-2  mt-11 font-montserrat text-2xl text-center" type="submit"
+    {{ $attributes }}>
+    {{ $slot }}
 </button>
 </div>
+

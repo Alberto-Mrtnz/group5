@@ -21,6 +21,7 @@ return new class extends Migration
             $table->text('description');
             $table->boolean('is_service');
             $table->string('address');
+            $table->text('experience');
             $table->foreignIdFor(User::class)->constrained();
             $table->foreignIdFor(Schedule::class)->constrained();
             $table->timestamps();

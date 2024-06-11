@@ -32,20 +32,18 @@ class UserController extends Controller
             'email' => 'required|email|unique:users,email',
             'password' => 'required|min:6',
             'name' => 'required|min:3',
-            'birthday' => 'required'
+            'birthday' => 'required',
+            'phone' => 'required',
+            'is_provider' => 'required|'
         ]);
 
-        if(User::create($datosVerificados)) {
-            return redirect('/');
+
+        $user = User::create($datosVerificados);
+
+        if($user) {
+            Auth::login($user);
+            return redirect('/home');
         }
 
-        return back()->withErrors([
-            'email' => 'Correo incorrecto',
-            'password' => 'Contraseña incorrecta',
-            'name' => 'Nombre requerido',
-            'birthday' => 'Cumpleaños requerido'
-        ]);
-
     }
-
 }

@@ -38,7 +38,7 @@
 
     <div class="bg-gray-300">
         <h1 class="font-montserrat font-semibold text-center text-2xl">Nuestros servicios</h1>
-        <swiper-container>
+        <swiper-container class="place-items-center">
             <swiper-slide><img src="{{ asset('img/salones-para-eventos.png') }}"></swiper-slide>
             <swiper-slide><img src="{{ asset('img/salones-para-eventos.png') }}"></swiper-slide>
             <swiper-slide><img src="{{ asset('img/salones-para-eventos.png') }}"></swiper-slide>

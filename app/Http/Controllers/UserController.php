@@ -34,8 +34,9 @@ class UserController extends Controller
             'name' => 'required|min:3',
             'birthday' => 'required',
             'phone' => 'required',
-            'is_provider' => 'required|'
+            'is_provider' => 'required|boolean'
         ]);
+
 
 
         $user = User::create($datosVerificados);

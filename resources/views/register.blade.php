@@ -18,11 +18,12 @@
 
 
             <div class="inline-flex">
-                <x-inputra titulo="Proveedor" name="is_provider" valor="1"></x-inputra>
-                <x-inputra titulo="Cliente" name="is_provider" valor="0"></x-inputra>
+                <x-inputradio titulo="Proveedor" name="is_provider" valor="1"/>
+                <x-inputradio titulo="Cliente" name="is_provider" valor="0" checked/>
             </div>
 
             <x-buttom class="size-20">REGISTER</x-buttom>
+
         </form>
     </div>
 

@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Category;
 use App\Models\Supply;
 use Illuminate\Support\Facades\Route;
 
@@ -17,7 +18,8 @@ Route::get('/register', function () {
 
 Route::get('/home', function () {
     return view('home', [
-        'supplies' => Supply::with('category')->get()
+        'supplies' => Supply::with('category')->orderByDesc('id')->get(),
+        'categories' => Category::all()
     ]);
 });
 

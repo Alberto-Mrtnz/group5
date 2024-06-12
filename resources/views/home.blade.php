@@ -1,8 +1,8 @@
 <x-layout>
     <div class="relative">
         <!-- barra -->
-        <div class="">
-            <nav class="w-full bg-gray-400 grid-cols-2">
+
+            <nav class="w-full bg-gray-400 flex justify-between">
                 <div class="inline-flex ">
                     <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
                         fill="#5f6368">
@@ -16,7 +16,7 @@
                     </div>
                 </div>
             </nav>
-        </div>
+
 
         <!-- buscador -->
         <label class="relative block px-20 pt-5">
@@ -42,7 +42,10 @@
             </div>
         </label>
         <!-- categorias -->
-        <x-buttonicon></x-buttonicon>
+
+        @foreach ($categories as $category )
+            <x-buttonicon>{{ $category->name }}</x-buttonicon>
+        @endforeach
         <!-- tarjeta -->
 
         <div class="grid grid-cols-4">
@@ -50,6 +53,8 @@
             @foreach ($supplies as $supply)
                 <x-event title="{{ $supply->name }}" description="{{ $supply->description }}" />
             @endforeach
+
+
 
             </div>
     </div>

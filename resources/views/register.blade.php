@@ -6,21 +6,29 @@
     </div>
 
     <div class="col-span-2">
-        <h1 class="mb-11 text-center font-moon text-5xl">EVYS</h1>
+        <h1 class="text-5xl text-center mb-11 font-moon">EVYS</h1>
         <form action="/register" method="POST">
             @csrf
 
-            <x-input titulo="Nombre" type="text" name="name"></x-input>
-            <x-input titulo="Email" type="email" name="email"></x-input>
-            <x-input titulo="Contraseña" type="password" name="password"></x-input>
-            <x-input titulo="Fecha de nacimiento" type="date" name="birthday"></x-input>
-            <x-input titulo="Telefóno" type="text" name="phone"></x-input>
+            <div class="grid grid-cols-2">
+                <div class="col-span-1">
+                    <x-input titulo="Nombre" type="text" name="name"></x-input>
+                    <x-input titulo="Email" type="email" name="email"></x-input>
+                    <x-input titulo="Contraseña" type="password" name="password"></x-input>
+                </div>
 
+                <div class="col-span-1 pl-4">
+                    <x-input titulo="Fecha de nacimiento" type="date" name="birthday"></x-input>
+                    <x-input titulo="Telefóno" type="text" name="phone"></x-input>
+                    <label for="" class="block font-medium font-montserrat">Elige tu tipo de cuenta</label>
+                    <div class="inline-flex pt-3 space-x-5 italic">
+                        <x-inputradio titulo="Proveedor" name="is_provider" valor="1"/>
+                        <x-inputradio titulo="Cliente" name="is_provider" valor="0" checked/>
+                    </div>
+                </div>
 
-            <div class="inline-flex">
-                <x-inputradio titulo="Proveedor" name="is_provider" valor="1"/>
-                <x-inputradio titulo="Cliente" name="is_provider" valor="0" checked/>
             </div>
+
 
             <x-buttom class="size-20">REGISTER</x-buttom>
 

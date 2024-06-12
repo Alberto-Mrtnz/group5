@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Supply;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -15,7 +16,9 @@ Route::get('/register', function () {
 });
 
 Route::get('/home', function () {
-    return view('home');
+    return view('home', [
+        'supplies' => Supply::with('category')->get()
+    ]);
 });
 
 Route::get('/principal', function () {

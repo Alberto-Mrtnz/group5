@@ -5,6 +5,7 @@ use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 use App\Models\Schedule;
 use App\Models\User;
+use App\Models\Category;
 
 return new class extends Migration
 {

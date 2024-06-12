@@ -5,6 +5,7 @@ namespace Database\Seeders;
 use App\Models\User;
 use App\Models\Schedule;
 use App\Models\Budget;
+use App\Models\Category;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -18,16 +19,21 @@ class DatabaseSeeder extends Seeder
          //User::factory(10)->create();
 
         $this->call([
-            UserSeeder::class,
-            ScheduleSeeder::class,
-            BudgetSeeder::class,
-            SupplySeeder::class,
-            BudgetItemSeeder::class,
+           // UserSeeder::class,
+            //ScheduleSeeder::class,
+            //BudgetSeeder::class,
+            //SupplySeeder::class,
+            //BudgetItemSeeder::class,
+
         ]);
 
         //User::factory()->create([
           //  'name' => 'Test User',
             //'email' => 'test@example.com',
         //]);
+
+         Category::factory(10)->create();
+
+
     }
 }

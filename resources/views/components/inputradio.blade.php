@@ -1,7 +1,7 @@
 @props(['titulo', 'valor'])
 
-<div class="font-montserrat text-center ml-14 mt-4">
-    <label class="container font-medium text-xl">{{ $titulo }}
+<div class="text-center font-montserrat">
+    <label class="container text-lg">{{ $titulo }}
         <input type="radio" value="{{$valor}}" {{$attributes}}>
     </label>
 </div>

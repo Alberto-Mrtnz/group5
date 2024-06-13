@@ -13,10 +13,50 @@ class UserSeeder extends Seeder
      */
     public function run(): void
     {
-        User::factory()->create([
-            'email' => 'test@example.com'
-        ]);
+        $users = [
+            [
+                'name' => 'Juan Perez',
+                'phone' => '2393-2487',
+                'email' => 'juan34@gmail.com',
+                'password' => '12345678',
+                'is_provider' => '1',
+            ],
+            [
+                'name' => 'Karla Gomez',
+                'phone' => '2974-0248',
+                'email' => 'Karlas98@gmail.com',
+                'password' => '12345678',
+                'is_provider' => '0',
+            ],
+            [
+                'name' => 'Rigoberto Ramirez',
+                'phone' => '7821-3653',
+                'email' => 'RigoAlfonso@gmail.com',
+                'password' => '12345678',
+                'is_provider' => '1',
+            ],
+            [
+                'name' => 'Maria Hernandez',
+                'phone' => '6248-7352',
+                'email' => 'mariahernandez@example.com',
+                'password' => '12345678',
+                'is_provider' => '0',
+            ],
+            [
+                'name' => 'Jose Garcia',
+                'phone' => '4312-9876',
+                'email' => 'josegarcia@example.com',
+                'password' => '12345678',
+                'is_provider' => '1',
+            ],
+        ];
 
-        User::factory(5)->create();
+        User::factory(count($users))->sequence( fn ($sqn) => $users[$sqn->index])->create();
+
+        //User::factory()->create([
+          //  'email' => 'test@example.com'
+        //]);
+
+        //User::factory(5)->create();
     }
 }

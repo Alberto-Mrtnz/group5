@@ -8,13 +8,13 @@
                  <div class="self-center flex flex-grow justify-between">
                      <div class="space-x-6">
                          <a href="#aboutUs" class="font-montserrat hover:border-b-4 border-white">Acerca de</a>
-                         <a href="" class="font-montserrat hover:border-b-4 border-white">Nuestro servicios</a>
+                         <a href="#ourServices" class="font-montserrat hover:border-b-4 border-white">Nuestro servicios</a>
                          <a href="" class="font-montserrat hover:border-b-4 border-white">Contactos</a>
                      </div>
                      <div class="space-x-4">
                          <a href="{{ route('login') }}" class="font-montserrat hover:text-gray-500">Iniciar sesión</a>
                          <a href="/register"
-                             class="font-montserrat border border-white hover:text-gray-500 rounded-lg p-2">Registrarse</a>
+                             class="font-montserrat hover:text-gray-500 rounded-lg p-2">Registrarse</a>
                      </div>
                  </div>
              </div>
@@ -41,7 +41,7 @@
              </div>
          </div>
 
-         <div class="bg-gray-300">
+         <div id="ourServices" class="bg-gray-300">
              <h1 class="font-montserrat font-semibold text-center text-2xl">Nuestros servicios</h1>
              <swiper-container class="place-items-center">
                  <swiper-slide><img src="{{ asset('img/salones-para-eventos.png') }}"></swiper-slide>

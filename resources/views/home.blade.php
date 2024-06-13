@@ -46,6 +46,7 @@
         @foreach ($categories as $category )
             <x-buttonicon>{{ $category->name }}</x-buttonicon>
         @endforeach
+        
         <!-- tarjeta -->
 
         <div class="grid grid-cols-4">

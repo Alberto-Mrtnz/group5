@@ -5,6 +5,7 @@ use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 use App\Models\Schedule;
 use App\Models\User;
+use App\Models\Category;
 
 return new class extends Migration
 {
@@ -16,14 +17,15 @@ return new class extends Migration
         Schema::create('supplies', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->integer('quantity');
+            $table->integer('quantity')->nullable();
             $table->integer('price');
             $table->text('description');
             $table->boolean('is_service');
-            $table->string('address');
+            $table->string('address')->nullable();
             $table->text('experience');
             $table->foreignIdFor(User::class)->constrained();
             $table->foreignIdFor(Schedule::class)->constrained();
+            $table->foreignIdFor(Category::class)->constrained();
             $table->timestamps();
         });
     }

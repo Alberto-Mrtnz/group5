@@ -11,16 +11,18 @@ use App\Models\BudgetItem;
 class Supply extends Model
 {
     use HasFactory;
-    public function BudgetItem() {
+
+    public function category() {
+        return $this->belongsTo(Category::class);
+    }
+
+    public function budgetItem() {
         return $this->belongsTo(BudgetItem::class);
     }
 
-    protected $fillable = [
-        'name',
-        'quantity',
-        'price',
-        'description',
-        'address'
+
+    protected $guarded = [
+        'id'
     ];
 
 

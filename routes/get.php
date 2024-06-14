@@ -31,3 +31,7 @@ Route::get('/service', function () {
     return view('service');
 });
 
+Route::get('/userprofile', function () {
+    return view('userprofile');
+});
+

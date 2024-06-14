@@ -35,3 +35,7 @@ Route::get('/userprofile', function () {
     return view('userprofile');
 });
 
+
+Route::get('/prueva', function () {
+    return view('prueva');
+});

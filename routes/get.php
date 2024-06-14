@@ -31,3 +31,6 @@ Route::get('/service', function () {
     return view('service');
 });
 
+Route::get('/prueva', function () {
+    return view('prueva');
+});

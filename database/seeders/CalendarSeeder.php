@@ -13,6 +13,13 @@ class CalendarSeeder extends Seeder
      */
     public function run(): void
     {
-        Calendar::factory(10)->create();
+        $calendar = [
+            'calendar',
+            'subject'
+        ];
+
+        Calendar::factory(count($calendar))->sequence(fn ($sqn) => ['day' => $calendar[$sqn->index]])->create();
+
+        //Calendar::factory(10)->create();
     }
 }

@@ -13,6 +13,14 @@ class ScheduleSeeder extends Seeder
      */
     public function run(): void
     {
-        Schedule::factory(10)->create();
+        $schedule = [
+            'day',
+            'open',
+            'close',
+        ];
+
+        Schedule::factory(count($schedule))->sequence(fn ($sqn) => ['day' => $schedule[$sqn->index]])->create();
+
+        //Schedule::factory(10)->create();
     }
 }

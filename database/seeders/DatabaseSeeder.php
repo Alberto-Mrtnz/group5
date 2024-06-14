@@ -19,8 +19,9 @@ class DatabaseSeeder extends Seeder
          //User::factory(10)->create();
 
         $this->call([
-           // UserSeeder::class,
-            //ScheduleSeeder::class,
+            CategorySeeder::class,
+            UserSeeder::class,
+            ScheduleSeeder::class,
             //BudgetSeeder::class,
             //SupplySeeder::class,
             //BudgetItemSeeder::class,
@@ -32,7 +33,7 @@ class DatabaseSeeder extends Seeder
             //'email' => 'test@example.com',
         //]);
 
-         Category::factory(10)->create();
+
 
 
     }

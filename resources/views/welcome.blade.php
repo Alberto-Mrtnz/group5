@@ -1,5 +1,5 @@
  <x-layout>
-     <div class="relative">
+     <div>
          <nav class="py-6 fixed w-full top-0 z-40">
              <div class="container mx-auto flex text-white">
 
@@ -8,7 +8,7 @@
                  <div class="self-center flex flex-grow justify-between">
                      <div class="space-x-6">
                          <a href="#aboutUs" class="font-montserrat hover:border-b-4 border-white">Acerca de</a>
-                         <a href="#ourServices#ourServices" class="font-montserrat hover:border-b-4 border-white">Nuestro
+                         <a href="#ourServices" class="font-montserrat hover:border-b-4 border-white">Nuestro
                              servicios</a>
                          <a href="" class="font-montserrat hover:border-b-4 border-white">Contactos</a>
                      </div>
@@ -29,8 +29,8 @@
              </div>
          </div>
 
-         <div id="aboutUs" class="bg-gray-200 py-16 flex flex-col justify-end items-end">
-             <div class="absolute justify-center text-center border border-transparent bg-gray-300 w-5">
+         <div id="aboutUs" class="bg-gray-200 flex h-screen relative">
+             <div class="absolute z-30 bottom-28 left-44 text-center border border-transparent bg-gray-300 py-16 px-16 w-2/5">
                 <h2 class="font-montserrat font-semibold text-center text-2xl pb-2.5">¿Quiénes somos?</h2>
                 <h2 class="font-montserrat text-xl">Facilitar el proceso de organización de eventos y celebraciones a
                      los salvadoreños mediante el desarrollo de una plataforma online que optimice la búsqueda y
@@ -38,19 +38,27 @@
                      personalizar sus eventos por su cuenta.</h2>
              </div>
 
-             <div class="static flex items-center justify-center w-2/5">
-                 <img src="{{ asset('img/imagen restaunate.jpg') }}" class="">
+             <div class="absolute left-1/2">
+                 <img src="{{ asset('img/imagen restaunate.jpg') }}" class="h-[calc(100vh-96px)] my-12">
              </div>
          </div>
 
-         <div id="ourServices" class="bg-gray-300">
-         <div id="ourServices" class="bg-gray-300">
-             <h1 class="font-montserrat font-semibold text-center text-2xl">Nuestros servicios</h1>
-             <swiper-container class="flex items-center justify-center w-64">
-                 <swiper-slide><img src="{{ asset('img/salones-para-eventos.png') }}"></swiper-slide>
-                 <swiper-slide><img src="{{ asset('img/salones-para-eventos.png') }}"></swiper-slide>
-                 <swiper-slide><img src="{{ asset('img/salones-para-eventos.png') }}"></swiper-slide>
+         <div id="ourServices" class="bg-gray-300 h-screen">
+             <h1 class="font-montserrat font-semibold text-center text-2xl py-10">Nuestros servicios</h1>
+             <swiper-container class="flex items-center justify-center mx-12 pb-10" pagination="true" effect="coverflow" grab-cursor="true" centered-slides="true"
+             slides-per-view="auto" coverflow-effect-rotate="50" coverflow-effect-stretch="0" coverflow-effect-depth="100"
+             coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true" loop="true" navigation="true">
+                 <swiper-slide class="w-3/5 bg-center"><img class="mx-auto" src="{{ asset('img/Home.jpeg') }}"></swiper-slide>
+                 <swiper-slide class="w-3/5"><img class="mx-auto" src="{{ asset('img/salones-para-eventos.png') }}"></swiper-slide>
+                 <swiper-slide class="w-3/5"><img src="{{ asset('img/Home.jpeg') }}"></swiper-slide>
+                 <swiper-slide class="w-3/5"><img src="{{ asset('img/salones-para-eventos.png') }}"></swiper-slide>
+                 <swiper-slide class="w-3/5"><img src="{{ asset('img/Home.jpeg') }}"></swiper-slide>
+                 <swiper-slide class="w-3/5"><img src="{{ asset('img/salones-para-eventos.png') }}"></swiper-slide>
              </swiper-container>
+         </div>
+
+         <div class="bg-gray-300">
+            <h1>Client Experiences</h1>
          </div>
 
          <section class="bg-gray-400 grid grid-cols-3">

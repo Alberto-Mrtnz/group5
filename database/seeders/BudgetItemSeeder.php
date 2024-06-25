@@ -13,6 +13,13 @@ class BudgetItemSeeder extends Seeder
      */
     public function run(): void
     {
-        BudgetItem::factory(45)->create();
+        $budget = [
+            'price',
+            'quantity'
+        ];
+
+        BudgetItem::factory(count($budget))->sequence(fn ($sqn) => ['price' => $budget[$sqn->index]])->create();
+
+        //BudgetItem::factory(45)->create();
     }
 }

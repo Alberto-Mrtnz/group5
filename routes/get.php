@@ -4,7 +4,7 @@ use App\Models\Category;
 use App\Models\Supply;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
+Route::get('/welcome', function () {
     return view('welcome');
 });
 
@@ -23,13 +23,15 @@ Route::get('/home', function () {
     ]);
 });
 
-Route::get('/principal', function () {
-    return view('principal');
-});
 
 Route::get('/service', function () {
     return view('service');
 });
+
+Route::get('/userprofile', function () {
+    return view('userprofile');
+});
+
 
 Route::get('/prueva', function () {
     return view('prueva');

@@ -18,7 +18,7 @@ class CalendarSeeder extends Seeder
             'subject'
         ];
 
-        Calendar::factory(count($calendar))->sequence(fn ($sqn) => ['day' => $calendar[$sqn->index]])->create();
+        Calendar::factory(count($calendar))->sequence(fn ($sqn) => ['date' => $calendar[$sqn->index]])->create();
 
         //Calendar::factory(10)->create();
     }

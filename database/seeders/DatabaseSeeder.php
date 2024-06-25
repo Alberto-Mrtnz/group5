@@ -22,9 +22,9 @@ class DatabaseSeeder extends Seeder
             CategorySeeder::class,
             UserSeeder::class,
             ScheduleSeeder::class,
-            //BudgetSeeder::class,
-            //SupplySeeder::class,
-            //BudgetItemSeeder::class,
+            BudgetSeeder::class,
+            SupplySeeder::class,
+            BudgetItemSeeder::class,
 
         ]);
 

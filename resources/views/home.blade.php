@@ -1,17 +1,31 @@
 <x-layout>
     <div class="relative">
         <!-- barra -->
-        <div class="">
-            <nav class="w-full bg-gray-300 grid-cols-2 py-0">
+        <div x-data="{opened: false}" >
+            <nav class="w-full bg-gray-300 grid-cols-2 py-0 z-20">
                 <div class="inline-flex w-full">
                     <x-buttonicon2></x-buttonicon2>
-                        <div class="py-2">
+                        <div class="py-2 pl-14 z-30">
                             <img class="h-10 w-10 rounded-full" src="{{ asset('img/persona2.jpg') }}">
                         </div>
-                        <h1 class="text-3xl font-moon flex-grow text-black py-2 px-2">EVYS</h1>
+                        <h1 class="text-3xl font-moon flex-grow text-black py-2 px-2 z-30">FIKA</h1>
                         <div class="py-2 px-3">
                             <img class=" justify-end h-10 w-10 rounded-full" src="{{ asset('img/persona2.jpg') }}">
                         </div>
+<!-- barra verticla -->
+                        <div x-show="opened" class="pt-20 flex flex-col fixed w-96 h-screen top-0 left-0 justify-start items-center bg-gray-300 z-20">
+                            <button class="bg-gray-500 py-8 mx-20 rounded-lg font-medium mt-2 font-montserrat text-2xl text-center">
+                                <p>hola</p>
+                            </button>
+                            <button class="bg-gray-500 py-8 px-12 rounded-lg font-medium p-2  mt-4 font-montserrat text-2xl text-center">
+                                <p>Reseñas</p>
+                            </button>
+                            <button class="bg-gray-500 py-8  rounded-lg font-medium p-2  mt-4 font-montserrat text-2xl text-center">
+                                <p>Calendario</p>
+                            </button>
+                            <button class="bg-gray-500 py-8 px-12 rounded-lg font-medium p-2  mt-4 font-montserrat text-2xl text-center">
+                                <p>Inicio</p>
+                            </button>
                 </div>
             </nav>
         </div>
@@ -19,7 +33,7 @@
 
         <!-- buscador -->
 
-        <label class="relative block px-20 pt-5">
+        <label class=" block px-20 pt-5">
             <span class="sr-only">Search</span>
                 <span class="absolute inset-y-0 left-0 flex items-center">
                     <svg class="h-5 w-5 fill-slate-300" viewBox="0 0 20 20"></svg>

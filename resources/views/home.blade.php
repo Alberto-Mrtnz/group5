@@ -14,8 +14,17 @@
                         </div>
 <!-- barra verticla -->
                         <div x-show="opened" class="pt-20 flex flex-col fixed w-96 h-screen top-0 left-0 justify-start items-center bg-gray-300 z-20">
-                            <button class="bg-gray-500 py-8 rounded-lg font-medium p-2  mt-11 font-montserrat text-2xl text-center">
-                                <p>Servicios habilitados</p>
+                            <button class="bg-gray-500 py-8 mx-20 rounded-lg font-medium mt-2 font-montserrat text-2xl text-center">
+                                <p>hola</p>
+                            </button>
+                            <button class="bg-gray-500 py-8 px-12 rounded-lg font-medium p-2  mt-4 font-montserrat text-2xl text-center">
+                                <p>Reseñas</p>
+                            </button>
+                            <button class="bg-gray-500 py-8  rounded-lg font-medium p-2  mt-4 font-montserrat text-2xl text-center">
+                                <p>Calendario</p>
+                            </button>
+                            <button class="bg-gray-500 py-8 px-12 rounded-lg font-medium p-2  mt-4 font-montserrat text-2xl text-center">
+                                <p>Inicio</p>
                             </button>
                 </div>
             </nav>

@@ -17,7 +17,6 @@
                 <x-buttomsd>Forgot password</x-buttomsd>
 
                 <div class="text-right">
-                    <x-buttom2 type="push" titulo="Forgot password" nombre="Forgot password" />
                 </div>
 
                 <x-buttom type="submit">LOGIN</x-buttom>

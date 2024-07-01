@@ -1,19 +1,24 @@
 <x-layout>
     <div>
-        <nav class="flex justify-between w-full bg-gray-400">
-            <div class="inline-flex ">
-                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
-                    fill="#5f6368">
-                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
-                </svg>
-                <h1 class="flex-grow text-3xl text-black font-moon">EVYS</h1>
-            </div class>
-            <div class="">
-                <div>
-                    <img class="content-between w-10 h-10 rounded-full " src="{{ asset('img/persona2.jpg') }}">
+        <div x-data="{opened: false}" >
+            <nav class="w-full bg-gray-300 grid-cols-2 py-0 z-20">
+                <div class="inline-flex w-full">
+                    <x-buttonicon2></x-buttonicon2>
+                        <div class="py-2 pl-14 z-30">
+                            <img class="h-10 w-10 rounded-full" src="{{ asset('img/persona2.jpg') }}">
+                        </div>
+                        <h1 class="text-3xl font-moon flex-grow text-black py-2 px-2 z-30">FIKA</h1>
+                        <div class="py-2 px-3">
+                            <img class=" justify-end h-10 w-10 rounded-full" src="{{ asset('img/persona2.jpg') }}">
+                        </div>
+<!-- barra verticla -->
+                        <div x-show="opened" class="pt-20 flex flex-col fixed w-96 h-screen top-0 left-0 justify-start items-center bg-gray-300 z-20">
+                            <button class="bg-gray-500 py-8 rounded-lg font-medium p-2  mt-11 font-montserrat text-2xl text-center">
+                                <p>Servicios habilitados</p>
+                            </button>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </div>
 
         <div class="grid grid-cols-3">
 
@@ -21,10 +26,8 @@
                 <div class="pl-8"> <img class="w-64 rounded-full mb-" src="{{ asset('img/icon.png') }}"></div>
             </div>
 
-            <div class="col-span-1 grid">
-                <input class="mt-4 rounded-lg h-16 w-80"/>
-                <x-buttonicon></x-buttonicon>
-                <input class="rounded-lg h-36 w-80"/>
+            <div>
+                <buttonicon></buttonicon>
             </div>
 
         </div>

@@ -60,34 +60,37 @@
              </swiper-container>
          </div>
 
-         <div class="bg-gray-200 h-screen">
+         <div class="bg-gray-200 h-screen grid place-content-center mx-12">
              <h1 class="font-montserrat font-semibold text-center text-2xl py-10">Client Experiences</h1>
-             <div class="grid grid-cols-3">
-                 <div class="col-spna-1">
-                        <div class="border border-transparent bg-gray-300 place-items-center">
-                            <img class="h-10 w-10 rounded-full" src="{{ asset('img/icon.png') }}">
-                            <h1 class="text-center">"Fika hizo que nuestra celebración fuera realmente memorable. Su atención al detalle y su
-                            servicio profesional superaron nuestras expectativas."</h1>
-                        </div>
-                 </div>
+             <div class="grid grid-cols-3 place-items-center">
+
+                 <x-review />
+
+                 <x-review />
+
+                 <x-review />
+
              </div>
          </div>
 
          <section class="bg-gray-400 grid grid-cols-3">
-             <div class="col-span-1">
-                 <h1 class="text-5xl font-moon text-center py-24">FIKA</h1>
-             </div>
-             <div class="font-medium font-montserrat col-span-1">
+
+            <h1 class="text-5xl font-moon text-center py-24">FIKA</h1>
+
+            <div class="font-medium font-montserrat col-span-1">
                  <h1 class="my-8 px-14 text-center">Dejanos un comentario sobre nuestro web site</h1>
-                 <input class="w-96 h-8 mx-7 rounded-2xl" />
-                 <button
-                     class="bg-stone-300 rounded-2xl font-medium py-0.5 px-4 font-montserrat text-center text-lg ml-7 mt-2"
-                     type="submit">Enviar</button>
+                 <form action="" method="post" class="flex flex-col mx-16">
+                     <input class="w-full h-8 rounded-2xl" />
+                     <button
+                         class="bg-stone-300 w-28 ml-auto rounded-2xl font-medium py-0.5 px-4 font-montserrat text-center text-lg mt-2"
+                         type="submit">Enviar</button>
+                 </form>
              </div>
+
              <div class="font-medium font-montserrat col-span-1 ml-8">
                  <h2 class="mt-12 mb-6">Contactos:</h2>
-                 <h2 class="mt-2">+503 67982315</h2>
-                 <h2 class="">Fika_eventos@gmail.com</h2>
+                 <h2 class="mb-1">Nuestro número de teléfono</h2>
+                 <h2 class="">Nuestro correo electrónico</h2>
              </div>
              <div class="font-medium font-montserrat mx-4 border-t border-gray-200 col-span-3">
                  <h1 class="my-4">Copyright © 2024 Fika - Privacidad - Términos</h1>

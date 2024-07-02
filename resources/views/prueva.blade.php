@@ -61,4 +61,21 @@
     </div>
 </div>
 
+<div id="ourServices" class="bg-gray-300 h-screen">
+    <h1 class="font-montserrat font-semibold text-center text-2xl py-10">Nuestros servicios</h1>
+    <swiper-container class="flex items-center justify-center mx-12 pb-10" pagination="true" effect="coverflow"
+        grab-cursor="true" centered-slides="true" slides-per-view="auto" coverflow-effect-rotate="50"
+        coverflow-effect-stretch="0" coverflow-effect-depth="100" coverflow-effect-modifier="1"
+        coverflow-effect-slide-shadows="true" loop="true" navigation="true">
+        <swiper-slide class="w-3/5 bg-center"><img class="mx-auto"
+                src="{{ asset('img/Home.jpeg') }}"></swiper-slide>
+        <swiper-slide class="w-3/5"><img class="mx-auto"
+                src="{{ asset('img/salones-para-eventos.png') }}"></swiper-slide>
+        <swiper-slide class="w-3/5"><img src="{{ asset('img/Home.jpeg') }}"></swiper-slide>
+        <swiper-slide class="w-3/5"><img src="{{ asset('img/salones-para-eventos.png') }}"></swiper-slide>
+        <swiper-slide class="w-3/5"><img src="{{ asset('img/Home.jpeg') }}"></swiper-slide>
+        <swiper-slide class="w-3/5"><img src="{{ asset('img/salones-para-eventos.png') }}"></swiper-slide>
+    </swiper-container>
+</div>
+
 </x-layout>

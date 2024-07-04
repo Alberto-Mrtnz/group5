@@ -15,13 +15,11 @@ export default {
       },
       colors: {
         'fika':{
-            'rosado':'#F5CAC3',
-            'turquesa':'#84A59D',
-            'gris':'#5E6472',
-            'prueba':'#A1C2BA',
-            'lavanda':'#D6EAEA',
-
-
+            'brown':'#E2D1CB',
+            'purple':'#7B5070',
+            'black':'#1F1A37',
+            'piel':'#F0E6DE',
+            'pink':'#E8B2D0',
         }
       },
     },

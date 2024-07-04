@@ -30,7 +30,7 @@
 
          <div id="aboutUs" class="relative flex h-screen bg-gray-100">
              <div
-                 class="absolute z-30 bottom-32 left-[150px] text-center border border-transparent bg-fika-gris text-white py-16 px-16 w-2/5">
+                 class="absolute z-30 bottom-32 left-[150px] text-center border border-transparent bg-fika-brown text-black py-16 px-16 w-2/5">
                  <h2 class="font-montserrat font-semibold text-center text-2xl pb-2.5">¿Quiénes somos?</h2>
                  <h2 class="text-xl font-montserrat">Facilitar el proceso de organización de eventos y celebraciones a
                      los salvadoreños mediante el desarrollo de una plataforma online que optimice la búsqueda y
@@ -73,7 +73,7 @@
              </div>
          </div>
 
-         <section class="grid grid-cols-3 text-black bg-fika-turquesa" id="contacto">
+         <section class="grid grid-cols-3 text-white bg-fika-black" id="contacto">
 
              <h1 class="py-24 text-5xl text-center font-moon">FIKA</h1>
 

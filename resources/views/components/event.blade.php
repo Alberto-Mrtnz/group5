@@ -5,7 +5,7 @@
         <div class="max-w-sm overflow-hidden shadow-lg rounded-lg bg-gray-300 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-1 duration-300">
             <img class="w-min size-56 m-6 rounded-lg" src="/img/home.jpeg">
             <div class="px-1 py-1">
-              <div class="font-bold text-center mb-2">{{$tittle}}</div>
+              <div class="font-bold text-center mb-2">{{$title}}</div>
               <p class="text-gray-700 text-base text-center">
                 {{$description}}
               </p>

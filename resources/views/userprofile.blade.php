@@ -9,19 +9,20 @@
                             </div>
                             <h1 class="z-30 flex-grow px-2 py-2 text-3xl text-black font-moon">FIKA</h1>
                             <div class="px-3 py-2">
-                                <img class="justify-end w-10 h-10 rounded-full " src="{{ asset('img/persona2.jpg') }}">
+                                <a href="/userprofile"><img class="justify-end w-10 h-10 rounded-full " src="{{ asset('img/persona2.jpg') }}"></a>
                             </div>
 <!-- barra verticla -->
     <div x-show="opened" class="fixed left-0 z-20 flex flex-col items-center justify-start h-screen pt-5 bg-white w-96 top-14">
          <div class="w-full ml-6">
+
             <button class="p-2 py-8 mt-2 text-2xl font-medium text-center text-white rounded-lg bg-fika-black px-14 font-montserrat">
-             <p>Servivios habilitados</p>
+             <a href="/service"><p>Servivios habilitados</p> </a>
             </button>
     </div>
 
         <div class="w-full ml-6">
              <button class="p-2 px-32 py-8 mt-4 text-2xl font-medium text-center text-white rounded-lg bg-fika-black font-montserrat">
-            <p>Reseñas    </p>
+            <p>Reseñas   </p>
         </button>
         </div>
 
@@ -33,7 +34,7 @@
 
         <div class="w-full ml-6">
             <button class="p-2 py-8 mt-4 text-2xl font-medium text-center text-white rounded-lg bg-fika-black px-36 font-montserrat">
-            <p>Inicio</p>
+                <a href="/home"><p>Inicio</p></a>
             </button>
         </div>
 
@@ -49,7 +50,7 @@
             <div class="grid py-16 cols-start-2">
                 <div class="pl-8 "> <img class="w-64 rounded-full mb-" src="{{ asset('img/icon.png') }}"></div>
 
-                <input class="mt-10 rounded-lg w-80 h-36"/>
+                <input class="mt-10 rounded-lg w-80 h-36 bg-fika-piel"/>
             </div>
 
             <div class="grid pt-2 cols-start-2">

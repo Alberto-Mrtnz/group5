@@ -75,7 +75,11 @@
                     <img class="mx-auto w-full" src="{{ asset('img/salones-para-eventos.png') }}">
                 </swiper-slide>
             </swiper-container>
+        <div class="m-4 bg-slate-300">
+            <p>Hola</p>
         </div>
+        </div>
+
         <div class="col-span-1 rounded-lg">
                 <div class="m-4 bg-slate-300">
                     <h1 class="mt- ml-6">{{ $supply->name }}</h1>
@@ -83,6 +87,9 @@
                     <p>{{ $supply->quantity }}</p>
                     <p>{{ $supply->address }}</p>
                     <p>{{ $supply->experience }}</p>
+                </div>
+                <div class="m-4 bg-slate-300">
+                    <p>Gatos</p>
                 </div>
         </div>
     </div>

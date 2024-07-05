@@ -1,13 +1,13 @@
-@props(['title', 'description'])
+@props(['title', 'description', 'id'])
 
-    <button>
+<a href="/service/{{ $id }}">
     <div class="pl-9 pr-6 pt-6">
         <div class="max-w-sm overflow-hidden shadow-lg rounded-lg bg-gray-300 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-1 duration-300">
             <img class="w-min size-56 m-6 rounded-lg" src="/img/home.jpeg">
             <div class="px-1 py-1">
-              <div class="font-bold text-xl mb-2">{{$slot}}</div>
-              <p class="text-gray-700 text-base">
-                {{$slot}}
+              <div class="font-bold text-center text-xl mb-2">{{$title}}</div>
+              <p class="text-gray-700 text-base text-center">
+                {{$description}}
               </p>
             </div>
             <div class=" justify-end w-full px-6 pt-2 pb-2 inline-flex">
@@ -16,4 +16,4 @@
             </div>
           </div>
     </div>
-    </button>
+</a>

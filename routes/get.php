@@ -28,8 +28,10 @@ Route::get('/home', function () {
 });
 
 
-Route::get('/service', function () {
-    return view('service');
+Route::get('/service/{service}', function (Supply $service) {
+    return view('service', [
+        'supply' => $service,
+    ]);
 });
 
 Route::get('/userprofile', function () {

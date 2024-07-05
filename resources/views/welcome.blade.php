@@ -1,38 +1,38 @@
  <x-layout>
      <div>
          <nav class="py-6 fixed w-full top-0 z-40 backdrop-blur-[2px]">
-             <div class="container mx-auto flex text-white">
+             <div class="container flex mx-auto text-white">
 
-                 <h1 class="text-3xl font-moon flex-grow">FIKA</h1>
+                 <h1 class="flex-grow text-3xl font-moon">FIKA</h1>
 
-                 <div class="self-center flex flex-grow justify-between">
+                 <div class="flex self-center justify-between flex-grow">
                      <div class="space-x-6">
-                         <a href="#aboutUs" class="font-montserrat hover:border-b-4 border-white">Acerca de</a>
-                         <a href="#ourServices" class="font-montserrat hover:border-b-4 border-white">Nuestro
+                         <a href="#aboutUs" class="border-white font-montserrat hover:border-b-4">Acerca de</a>
+                         <a href="#ourServices" class="border-white font-montserrat hover:border-b-4">Nuestro
                              servicios</a>
-                         <a href="" class="font-montserrat hover:border-b-4 border-white">Contactos</a>
+                         <a href="#contacto" class="border-white font-montserrat hover:border-b-4">Contactos</a>
                      </div>
                      <div class="space-x-4">
                          <a href="{{ route('login') }}" class="font-montserrat hover:text-gray-500">Iniciar sesión</a>
-                         <a href="/register" class="font-montserrat hover:text-gray-500 rounded-lg p-2">Registrarse</a>
+                         <a href="/register" class="p-2 rounded-lg font-montserrat hover:text-gray-500">Registrarse</a>
                      </div>
                  </div>
              </div>
          </nav>
 
-         <div class="w-full h-screen mt-50 relative">
-             <img src="{{ asset('img/fondo-homepage.jpg') }}" class="h-full w-full">
+         <div class="relative w-full h-screen mt-50">
+             <img src="{{ asset('img/fondo-homepage.jpg') }}" class="w-full h-full">
              <div class="absolute inset-0 flex items-center justify-center">
-                 <h2 class="font-moon text-5xl text-white mt-72">Donde encuentras los mejores lugares para tus eventos
+                 <h2 class="text-5xl text-white font-moon mt-72">Donde encuentras los mejores lugares para tus eventos
                  </h2>
              </div>
          </div>
 
-         <div id="aboutUs" class="bg-gray-200 flex h-screen relative">
+         <div id="aboutUs" class="relative flex h-screen bg-gray-100">
              <div
-                 class="absolute z-30 bottom-32 left-[150px] text-center border border-transparent bg-gray-300 py-16 px-16 w-2/5">
+                 class="absolute z-30 bottom-32 left-[150px] text-center border border-transparent bg-fika-brown text-black py-16 px-16 w-2/5">
                  <h2 class="font-montserrat font-semibold text-center text-2xl pb-2.5">¿Quiénes somos?</h2>
-                 <h2 class="font-montserrat text-xl">Facilitar el proceso de organización de eventos y celebraciones a
+                 <h2 class="text-xl font-montserrat">Facilitar el proceso de organización de eventos y celebraciones a
                      los salvadoreños mediante el desarrollo de una plataforma online que optimice la búsqueda y
                      contratación de servicios relacionados con eventos para que la gente pueda ahorrar dinero y
                      personalizar sus eventos por su cuenta.</h2>
@@ -43,9 +43,9 @@
              </div>
          </div>
 
-         <div id="ourServices" class="bg-gray-300 h-screen">
-             <h1 class="font-montserrat font-semibold text-center text-2xl py-10">Nuestros servicios</h1>
-             <swiper-container class="flex items-center justify-center mx-12 pb-10" pagination="true" effect="coverflow"
+         <div id="ourServices" class="h-screen bg-gray-100">
+             <h1 class="py-10 text-2xl font-semibold text-center font-montserrat">Nuestros servicios</h1>
+             <swiper-container class="flex items-center justify-center pb-10 mx-12" pagination="true" effect="coverflow"
                  grab-cursor="true" centered-slides="true" slides-per-view="auto" coverflow-effect-rotate="50"
                  coverflow-effect-stretch="0" coverflow-effect-depth="100" coverflow-effect-modifier="1"
                  coverflow-effect-slide-shadows="true" loop="true" navigation="true">
@@ -60,8 +60,8 @@
              </swiper-container>
          </div>
 
-         <div class="bg-gray-200 h-screen grid place-content-center mx-12">
-             <h1 class="font-montserrat font-semibold text-center text-2xl py-10">Client Experiences</h1>
+         <div class="grid h-screen mx-12 bg-gray-100 place-content-center">
+             <h1 class="py-10 text-2xl font-semibold text-center font-montserrat">Client Experiences</h1>
              <div class="grid grid-cols-3 place-items-center">
 
                  <x-review />
@@ -73,26 +73,26 @@
              </div>
          </div>
 
-         <section class="bg-gray-400 grid grid-cols-3">
+         <section class="grid grid-cols-3 text-white bg-fika-black" id="contacto">
 
-            <h1 class="text-5xl font-moon text-center py-24">FIKA</h1>
+             <h1 class="py-24 text-5xl text-center font-moon">FIKA</h1>
 
-            <div class="font-medium font-montserrat col-span-1">
-                 <h1 class="my-8 px-14 text-center">Dejanos un comentario sobre nuestro web site</h1>
+             <div class="col-span-1 font-medium font-montserrat">
+                 <h1 class="my-8 text-center px-14">Dejanos un comentario sobre nuestro web site</h1>
                  <form action="" method="post" class="flex flex-col mx-16">
                      <input class="w-full h-8 rounded-2xl" />
                      <button
-                         class="bg-stone-300 w-28 ml-auto rounded-2xl font-medium py-0.5 px-4 font-montserrat text-center text-lg mt-2"
+                         class="bg-fika-wisteria w-28 ml-auto rounded-2xl font-medium py-0.5 px-4 font-montserrat text-center text-lg mt-2"
                          type="submit">Enviar</button>
                  </form>
              </div>
 
-             <div class="font-medium font-montserrat col-span-1 ml-8">
+             <div class="col-span-1 ml-8 font-medium font-montserrat">
                  <h2 class="mt-12 mb-6">Contactos:</h2>
                  <h2 class="mb-1">Nuestro número de teléfono</h2>
                  <h2 class="">Nuestro correo electrónico</h2>
              </div>
-             <div class="font-medium font-montserrat mx-4 border-t border-gray-200 col-span-3">
+             <div class="col-span-3 mx-4 font-medium border-t border-gray-200 font-montserrat">
                  <h1 class="my-4">Copyright © 2024 Fika - Privacidad - Términos</h1>
              </div>
          </section>

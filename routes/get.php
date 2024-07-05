@@ -36,7 +36,7 @@ Route::get('/service/{service}', function (Supply $service) {
 
 Route::get('/userprofile', function () {
     return view('userprofile');
-});
+})->name('userprofile');
 
 Route::get('/providerprofile', function () {
     return view('providerprofile');

@@ -15,7 +15,7 @@
     <div x-show="opened" class="fixed left-0 z-20 flex flex-col items-center justify-start h-screen pt-5 bg-white w-96 top-14">
         <div class="w-full ml-6">
             <button class="p-2 py-8 mt-2 text-2xl font-medium text-center text-white rounded-lg bg-fika-black px-14 font-montserrat">
-            <p>Servivios habilitados</p>
+                <a href="/service"><p>Servivios habilitados</p> </a>
              </button>
         </div>
 
@@ -34,7 +34,7 @@
 
         <div class="w-full ml-6">
             <button class="p-2 py-8 mt-4 text-2xl font-medium text-center text-white rounded-lg bg-fika-black px-36 font-montserrat">
-             <p>Inicio</p>
+                <a href="/home"><p>Inicio</p></a>
             </button>
         </div>
 
@@ -51,7 +51,7 @@
                 <img class="w-64 mx-12 rounded-full" src="{{ asset('img/icon.png') }}">
             </div>
             <div class="col-span-2 py-">
-                <h1 class="text-2xl font-montserrat my-10">Nombre de usuario</h1>
+                <h1 class="my-10 text-2xl font-montserrat">Nombre de usuario</h1>
                 <x-buttom>Tipos de eventos</x-buttom>
                 <h1 class="text-2xl font-montserrat">Descripión</h1>
             </div>

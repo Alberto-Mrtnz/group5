@@ -1,12 +1,12 @@
 @props(['title', 'description', 'id'])
 
 <a href="/service/{{ $id }}">
-    <div class="pl-9 pr-6 pt-6">
-        <div class="max-w-sm overflow-hidden shadow-lg rounded-lg bg-gray-300 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-1 duration-300">
-            <img class="w-min size-56 m-6 rounded-lg" src="/img/home.jpeg">
+    <div class="pt-6 pr-6 pl-9">
+        <div class="max-w-sm overflow-hidden transition duration-300 ease-in-out delay-150 rounded-lg shadow-lg bg-fika-brown hover:-translate-y-1 hover:scale-1">
+            <img class="m-6 rounded-lg w-min size-56" src="/img/home.jpeg">
             <div class="px-1 py-1">
-              <div class="font-bold text-center mb-2">{{$title}}</div>
-              <p class="text-gray-700 text-base text-center">
+              <div class="mb-2 font-bold text-center">{{$title}}</div>
+              <p class="text-base text-center text-gray-700">
                 {{$description}}
               </p>
             </div>

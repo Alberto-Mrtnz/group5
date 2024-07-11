@@ -14,7 +14,25 @@
                      </div>
                      <div class="space-x-4">
                          <a href="{{ route('login') }}" class="font-montserrat hover:text-gray-500">Iniciar sesión</a>
-                          class="p-2 rounded-lg font-montserrat hover:text-gray-500">Registrarse</a>
+                         <nav class="py-6 fixed w-full top-0 z-40 backdrop-blur-[2px]">
+                            <div class="container flex mx-auto text-white">
+
+                                <h1 class="flex-grow text-3xl font-moon">FIKA</h1>
+
+                                <div class="flex self-center justify-between flex-grow">
+                                    <div class="space-x-6">
+                                        <a href="#aboutUs" class="border-white font-montserrat hover:border-b-4">Acerca de</a>
+                                        <a href="#ourServices" class="border-white font-montserrat hover:border-b-4">Nuestro
+                                            servicios</a>
+                                        <a href="#contacto" class="border-white font-montserrat hover:border-b-4">Contactos</a>
+                                    </div>
+                                    <div class="space-x-4">
+                                        <a href="{{ route('login') }}" class="font-montserrat hover:text-gray-500">Iniciar sesión</a>
+                                        class="p-2 rounded-lg font-montserrat hover:text-gray-500">Registrarse</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
                      </div>
                  </div>
              </div>

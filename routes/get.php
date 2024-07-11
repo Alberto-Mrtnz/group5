@@ -30,7 +30,7 @@ Route::get('/home', function () {
 
 Route::get('/service/{service}', function (Supply $service) {
     return view('service', [
-        'supply' => $service,
+        'supply' => $service->load('user'),
     ]);
 });
 

@@ -1,6 +1,6 @@
 <x-layout>
     <!-- Barra -->
-                <x-barra></x-barra>
+    <x-barra></x-barra>
 
     <!-- servivio -->
 

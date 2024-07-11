@@ -4,7 +4,7 @@
         <x-barra></x-barra>
         <!-- buscador -->
 
-        <label class="block px-20 pt-5 ">
+        <label class="block px-20 pt-5">
             <span class="sr-only">Search</span>
             <span class="absolute inset-y-0 left-0 flex items-center">
                 <svg class="w-5 h-5 fill-slate-300" viewBox="0 0 20 20"></svg>

@@ -7,7 +7,7 @@
             <div class="col-span-1 py-16">
                 <img class="w-64 mx-12 rounded-full" src="{{ asset('img/icon.png') }}">
             </div>
-            <div class="col-span-2 py-">
+            <div class="col-span-2">
                 <h1 class="text-2xl font-montserrat my-14">Nombre de usuario</h1>
                 <x-buttom class="py-10">Tipos de eventos</x-buttom>
                 <h1 class="text-2xl font-montserrat">Descripión</h1>

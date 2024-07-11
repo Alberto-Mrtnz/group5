@@ -14,7 +14,7 @@
                      </div>
                      <div class="space-x-4">
                          <a href="{{ route('login') }}" class="font-montserrat hover:text-gray-500">Iniciar sesión</a>
-                          class="p-2 rounded-lg font-montserrat hover:text-gray-500">Registrarse</a>
+                          <a href="{{ route('register') }}" class="p-2 rounded-lg font-montserrat hover:text-gray-500">Registrarse</a>
                      </div>
                  </div>
              </div>

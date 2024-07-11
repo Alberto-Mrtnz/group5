@@ -30,13 +30,13 @@ Route::get('/home', function () {
 
 Route::get('/service/{service}', function (Supply $service) {
     return view('service', [
-        'supply' => $service,
+        'supply' => $service->load('user'),
     ]);
 });
 
 Route::get('/userprofile', function () {
     return view('userprofile');
-});
+})->name('userprofile');
 
 Route::get('/providerprofile', function () {
     return view('providerprofile');

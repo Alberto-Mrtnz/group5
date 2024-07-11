@@ -20,6 +20,8 @@ export default {
             'black':'#1F1A37',
             'piel':'#F0E6DE',
             'pink':'#E8B2D0',
+            'orange':'#CE7457',
+            'sand':'#EAD1BA',
         }
       },
     },

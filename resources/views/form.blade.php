@@ -11,10 +11,22 @@
 
                 <label for="" class="block font-medium font-montserrat">¿Qué tipo de servicios atiendes?</label>
                     <div class="pt-3 italic">
-                        <x-inputradio titulo="Bodas" name="is_provider" valor="Bodas"/>
-                        <x-inputradio titulo="Fiestas corporativas" name="is_provider" valor="0" checked/>
-                        <x-inputradio titulo="Cumpleaños" name="is_provider" valor="1"/>
-                        <x-inputradio titulo="Bautizos" name="is_provider" valor="0" checked/>
+                        <input type="radio" name="service" value="veniu"><label for="">Veniu</label><br>
+                        <input type="radio" name="service" value="decoration"><label for="">Decoration</label><br>
+                        <input type="radio" name="service" value="banquets"><label for="">Banquets</label><br>
+                        <input type="radio" name="service" value="audiovisual_equipment"><label for="">Audiovisual equipment</label><br>
+                        <input type="radio" name="service" value="furniture"><label for="">Furniture</label><br>
+                        <input type="radio" name="service" value="animation"><label for="">Animation</label><br>
+                    </div>
+
+                    <label for="" class="block font-medium font-montserrat">¿Qué tipo de servicios atiendes?</label>
+                    <div class="pt-3 italic">
+                        <input type="radio" name="service" value="veniu"><label for="">Veniu</label><br>
+                        <input type="radio" name="service" value="decoration"><label for="">Decoration</label><br>
+                        <input type="radio" name="service" value="banquets"><label for="">Banquets</label><br>
+                        <input type="radio" name="service" value="audiovisual_equipment"><label for="">Audiovisual equipment</label><br>
+                        <input type="radio" name="service" value="furniture"><label for="">Furniture</label><br>
+                        <input type="radio" name="service" value="animation"><label for="">Animation</label><br>
                     </div>
 
                 <x-buttom type="submit">REGISTER</x-buttom>

@@ -80,7 +80,7 @@
              <div class="col-span-1 font-medium font-montserrat">
                  <h1 class="my-8 text-center px-14">Dejanos un comentario sobre nuestro web site</h1>
                  <form action="" method="post" class="flex flex-col mx-16">
-                     <input class="w-full h-8 rounded-2xl" />
+                     <input class="text-black w-full h-8 rounded-2xl" />
                      <button
                          class="bg-fika-wisteria w-28 ml-auto rounded-2xl font-medium py-0.5 px-4 font-montserrat text-center text-lg mt-2"
                          type="submit">Enviar</button>

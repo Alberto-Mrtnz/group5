@@ -1,9 +1,9 @@
  <x-layout>
      <div>
-         <nav class="py-6 fixed w-full top-0 z-40 backdrop-blur-[2px]">
+         <nav class="py-6 fixed w-full top-0 z-40 backdrop-blur-sm">
              <div class="container flex mx-auto text-white">
 
-                 <h1 class="flex-grow text-3xl font-moon">FIKA</h1>
+                <img src="{{ asset('img/logo.jpeg') }}" class="w-32">
 
                  <div class="flex self-center justify-between flex-grow">
                      <div class="space-x-6">
@@ -28,9 +28,9 @@
              </div>
          </div>
 
-         <div id="aboutUs" class="relative flex h-screen bg-gray-100">
+         <div id="aboutUs" class="relative flex h-screen bg-">
              <div
-                 class="absolute z-30 bottom-32 left-[150px] text-center border border-transparent bg-fika-brown text-black py-16 px-16 w-2/5">
+                 class="absolute z-30 bottom-32 left-[160px] text-center border border-transparent bg-[#f2dbae] text-black py-16 px-16 w-2/5">
                  <h2 class="font-montserrat font-semibold text-center text-2xl pb-2.5">¿Quiénes somos?</h2>
                  <h2 class="text-xl font-montserrat">Facilitar el proceso de organización de eventos y celebraciones a
                      los salvadoreños mediante el desarrollo de una plataforma online que optimice la búsqueda y
@@ -38,12 +38,12 @@
                      personalizar sus eventos por su cuenta.</h2>
              </div>
 
-             <div class="absolute right-[150px]">
+             <div class="absolute right-[160px]">
                  <img src="{{ asset('img/imagen restaunate.jpg') }}" class="h-[calc(100vh-96px)] my-12">
              </div>
          </div>
 
-         <div id="ourServices" class="h-screen bg-gray-100">
+         <div id="ourServices" class="h-screen bg-">
              <h1 class="py-10 text-2xl font-semibold text-center font-montserrat">Nuestros servicios</h1>
              <swiper-container class="flex items-center justify-center pb-10 mx-12" pagination="true" effect="coverflow"
                  grab-cursor="true" centered-slides="true" slides-per-view="auto" coverflow-effect-rotate="50"
@@ -60,7 +60,7 @@
              </swiper-container>
          </div>
 
-         <div class="grid h-screen mx-12 bg-gray-100 place-content-center">
+         <div class="grid h-screen mx-12 bg- place-content-center">
              <h1 class="py-10 text-2xl font-semibold text-center font-montserrat">Client Experiences</h1>
              <div class="grid grid-cols-3 place-items-center">
 
@@ -73,9 +73,9 @@
              </div>
          </div>
 
-         <section class="grid grid-cols-3 text-white bg-fika-black" id="contacto">
+         <section class="grid grid-cols-3 text-black bg-[#6db1a4]" id="contacto">
 
-             <h1 class="py-24 text-5xl text-center font-moon">FIKA</h1>
+            <img src="{{ asset('img/logo.jpeg') }}" class="w-36 justify-items-center">
 
              <div class="col-span-1 font-medium font-montserrat">
                  <h1 class="my-8 text-center px-14">Dejanos un comentario sobre nuestro web site</h1>

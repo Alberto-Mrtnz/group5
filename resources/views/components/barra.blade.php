@@ -1,5 +1,5 @@
 <div x-data="{ opened: false }" class="sticky top-0 z-40">
-    <nav class="z-40 w-full grid-cols-2 bg-fika-pink sticky top-0 backdrop-[2px]">
+    <nav class="z-40 w-full grid-cols-2 bg-[#e9c6ca] sticky top-0 backdrop-[2px]">
         <div class="inline-flex w-full">
             <x-buttonicon2></x-buttonicon2>
             <div class="z-30 py-2 pl-14">
@@ -15,21 +15,21 @@
                     class="fixed left-0 z-20 flex flex-col items-center justify-start h-screen pt-5 bg-white w-96 top-16">
                     <div class="w-full ml-6">
                         <button
-                            class="p-2 py-8 mt-2 text-2xl font-medium text-center text-black rounded-lg bg-fika-piel px-14 font-montserrat hover:bg-fika-sand">
-                            <p>Servivios habilitados</p>
+                            class="p-2 py-8 mt-2 text-2xl font-medium text-center text-black rounded-lg bg-fika-piel px-14 font-montserrat hover:bg-[#fb825a]">
+                            <p>Servicios habilitados</p>
                         </button>
                     </div>
 
                     <div class="w-full ml-6">
                         <button
-                            class="p-2 px-32 py-8 mt-4 text-2xl font-medium text-center text-black rounded-lg bg-fika-piel font-montserrat hover:bg-fika-sand">
+                            class="p-2 px-32 py-8 mt-4 text-2xl font-medium text-center text-black rounded-lg bg-fika-piel font-montserrat hover:bg-[#fdb207]">
                             <p>Reseñas </p>
                         </button>
                     </div>
 
                     <div class="w-full ml-6">
                         <button
-                            class="p-2 py-8 mt-4 text-2xl font-medium text-center text-black rounded-lg bg-fika-piel px-28 font-montserrat hover:bg-fika-sand">
+                            class="p-2 py-8 mt-4 text-2xl font-medium text-center text-black rounded-lg bg-fika-piel px-28 font-montserrat hover:bg-[#194f3f]">
                             <p>Calendario</p>
                         </button>
 
@@ -38,7 +38,7 @@
                     <div class="w-full ml-6">
                         <a href="/home">
                         <button
-                            class="p-2 py-8 mt-4 text-2xl font-medium text-center text-black rounded-lg bg-fika-piel px-36 font-montserrat hover:bg-fika-sand">
+                            class="p-2 py-8 mt-4 text-2xl font-medium text-center text-black rounded-lg bg-fika-piel px-36 font-montserrat hover:bg-[#e9c6ca]">
                            <p>Inicio</p>
                         </button>
                     </a>

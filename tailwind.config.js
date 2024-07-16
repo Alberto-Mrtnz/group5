@@ -22,6 +22,7 @@ export default {
             'pink':'#E8B2D0',
             'orange':'#CE7457',
             'sand':'#EAD1BA',
+
         }
       },
     },

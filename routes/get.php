@@ -2,6 +2,7 @@
 
 use App\Models\Category;
 use App\Models\Supply;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -35,7 +36,9 @@ Route::get('/service/{service}', function (Supply $service) {
 });
 
 Route::get('/userprofile', function () {
-    return view('userprofile');
+    return view('userprofile', [
+        'user' => Auth::user()
+    ]);
 })->name('userprofile');
 
 Route::get('/providerprofile', function () {

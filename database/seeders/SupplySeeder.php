@@ -29,7 +29,7 @@ class SupplySeeder extends Seeder
         $schedules = $this->schedules();
 
         $supplies = [
-            [   
+            [
                 'name' => 'Banquet Chair',
                 'quantity' => 150,
                 'price' => 45,
@@ -93,6 +93,30 @@ class SupplySeeder extends Seeder
 
         Supply::factory(count($supplies))->sequence(fn ($sqn) => $supplies[$sqn->index])->create();
 
-        //Supply::factory(45)->create();
+        Supply::factory()->create([
+            'user_id' => User::where('email', 'test@example.com')->first(),
+            'name' => 'Sound System',
+            'quantity' => null,
+            'price' => 2000,
+                'description' => 'High-quality sound system for clear audio at events.',
+                'is_service' => true,
+                'address' => '654 Audio Road, Music Town',
+                'experience' => 'Ensures excellent sound quality for speeches, music, and presentations.',
+                'category_id' => Category::where('name', 'Aparatos Audiovisuales')->first()->id,
+                'schedule_id' => $schedules->random(),
+        ]);
+
+        Supply::factory()->create([
+            'user_id' => User::where('email', 'test@example.com')->first(),
+            'name' => 'Sound System 222222',
+            'quantity' => null,
+            'price' => 2000,
+                'description' => 'High-quality sound system for clear audio at events.',
+                'is_service' => true,
+                'address' => '654 Audio Road, Music Town',
+                'experience' => 'Ensures excellent sound quality for speeches, music, and presentations.',
+                'category_id' => Category::where('name', 'Aparatos Audiovisuales')->first()->id,
+                'schedule_id' => $schedules->random(),
+        ]);
     }
 }

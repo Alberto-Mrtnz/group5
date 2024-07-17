@@ -6,7 +6,7 @@
     </div>
 
     <div class="col-span-2">
-        <h1 class="text-5xl text-center mb-11 font-moon">EVYS</h1>
+        <img src="{{ asset('img/eventi.png') }}" class="w-64 justify-items-center">
         <form action="/register" method="POST">
             @csrf
 

@@ -37,7 +37,7 @@ class SupplySeeder extends Seeder
                 'is_service' => false,
                 'address' => '123 Event Avenue, Party City',
                 'experience' => 'Used in over 200 events for guests\' seating.',
-                'img' => '',
+                'img' => 'banquet-chair.webp',
                 'user_id' => $users->random(),
                 'category_id' => Category::where('name', 'Mobiliario')->first()->id,
                 'schedule_id' => $schedules->random(),
@@ -195,7 +195,7 @@ class SupplySeeder extends Seeder
                 'experience' => 'Used by professional caterers.',
                 'img' => '',
                 'user_id' => $users->random(),
-                'category_id' => Category::where('name', 'Equipamiento')->first(),
+                'category_id' => Category::where('name', 'Servicios')->first(),
                 'schedule_id' => $schedules->random(),
             ],
             [

@@ -42,8 +42,10 @@ Route::get('/userprofile', function () {
 })->name('userprofile');
 
 Route::get('/providerprofile', function () {
-    return view('providerprofile');
-});
+    return view('providerprofile',[
+        'user'=> Auth::user()
+    ]);
+})->name('providerprofile');
 
 Route::get('/prueva', function () {
     return view('prueva');

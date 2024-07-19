@@ -7,8 +7,10 @@
             </div>
             <p class="z-30 flex-grow px-2 py-2 text-3xl text-black font-moon ">FIKA</p>
             <div class="px-3 py-2">
-                <a href="/userprofile"><img class="justify-end w-10 h-10 rounded-full " src="{{ asset('img/persona2.jpg') }}"></a>
+
+                <a href="/userprofile"><img class="justify-end w-10 h-10 rounded-full" src="{{ asset('img/persona2.jpg') }}"></a>
             </div>
+
 
 
 <div x-show="opened"

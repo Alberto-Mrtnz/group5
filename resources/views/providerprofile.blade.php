@@ -1,20 +1,22 @@
 <x-layout>
     <div>
         <div x-data="{opened: false}" >
-            <x-barra></x-barra>
+               <x-barra></x-barra>
 
-        <div class="grid grid-cols-3">
-            <div class="col-span-1 py-16">
-                <img class="w-64 mx-12 rounded-full" src="{{ asset('img/icon.png') }}">
+        <div class="grid grid-cols-2 m-2 border-2x place-items-center">
+            <div class="grid py-16 cols-start-2">
+                <div class="pl-8 "> <img class="w-64 rounded-full mb-" src="{{ asset('img/icon.png') }}"></div>
+                @auth
+                    {{ auth()->user()->name }}
+                @endauth
+
+                <input class="mt-10 rounded-lg w-80 h-36 bg-fika-piel"/>
             </div>
-            <div class="col-span-2">
-                <h1 class="text-2xl font-montserrat my-14">Nombre de usuario</h1>
-                <x-buttom class="py-10">Tipos de eventos</x-buttom>
-                <h1 class="text-2xl font-montserrat">Descripión</h1>
-            </div>
+
+
+
+           
+
         </div>
-
-            <x-event id="3" title="asdba" description="asdd"/>
-        <div>
     </div>
 </x-layout>

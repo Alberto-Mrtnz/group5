@@ -14,14 +14,13 @@ export default {
         'montserrat': ['Montserrat Alternates', ...defaultTheme.fontFamily.sans]
       },
       colors: {
-        'fika':{
-            'brown':'#E2D1CB',
-            'purple':'#7B5070',
-            'black':'#1F1A37',
-            'piel':'#F0E6DE',
-            'pink':'#E8B2D0',
-            'orange':'#CE7457',
-            'sand':'#EAD1BA',
+        'eventi':{
+            'rosa':'#F9F6EE',
+            'cafe':'#DF9660',
+            'gris':'#E5E7EB',
+            'celeste':'#87CEEB',
+            'azul':'#64A1B9',
+            'lapizlazule':'#063254',
 
         }
       },

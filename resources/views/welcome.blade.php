@@ -28,9 +28,9 @@
              </div>
          </div>
 
-         <div id="aboutUs" class="relative flex h-screen bg-">
+         <div id="aboutUs" class="relative flex h-screen">
              <div
-                 class="absolute z-30 bottom-32 left-[160px] text-center border border-transparent bg-[#f2dbae] text-black py-16 px-16 w-2/5">
+                 class="absolute z-30 bottom-32 left-[160px] text-center border border-transparent bg-eventi-gris text-black py-16 px-16 w-2/5">
                  <h2 class="font-montserrat font-semibold text-center text-2xl pb-2.5">¿Quiénes somos?</h2>
                  <h2 class="text-xl font-montserrat">Facilitar el proceso de organización de eventos y celebraciones a
                      los salvadoreños mediante el desarrollo de una plataforma online que optimice la búsqueda y
@@ -44,7 +44,7 @@
          </div>
 
          <div id="ourServices" class="h-screen bg-">
-             <h1 class="py-10 text-2xl font-semibold text-center font-montserrat">Nuestros servicios</h1>
+             <h1 class="py-10 text-2xl font-semibold text-center font-montserrat">Our services</h1>
              <swiper-container class="flex items-center justify-center pb-10 mx-12" pagination="true" effect="coverflow"
                  grab-cursor="true" centered-slides="true" slides-per-view="auto" coverflow-effect-rotate="50"
                  coverflow-effect-stretch="0" coverflow-effect-depth="100" coverflow-effect-modifier="1"
@@ -73,27 +73,27 @@
              </div>
          </div>
 
-         <section class="grid grid-cols-3 text-black bg-[#DF9667]" id="contacto">
+         <section class="grid grid-cols-3 text-black bg-eventi-cafe" id="contacto">
 
-            <img src="{{ asset('img/eventi.png') }}" class="w-48 justify-items-center">
+            <img src="{{ asset('img/mainlogo.png') }}" class="w-48 justify-items-center">
 
              <div class="col-span-1 font-medium font-montserrat">
-                 <h1 class="my-8 text-center px-14">Dejanos un comentario sobre nuestro web site</h1>
+                 <h1 class="my-8 text-center px-14">Leave us a comment about our web site</h1>
                  <form action="" method="post" class="flex flex-col mx-16">
                      <input class="text-black w-full h-8 rounded-2xl" />
                      <button
                          class="bg-fika-wisteria w-28 ml-auto rounded-2xl font-medium py-0.5 px-4 font-montserrat text-center text-lg mt-2"
-                         type="submit">Enviar</button>
+                         type="submit">Send</button>
                  </form>
              </div>
 
              <div class="col-span-1 ml-8 font-medium font-montserrat">
-                 <h2 class="mt-12 mb-6">Contactos:</h2>
-                 <h2 class="mb-1">Nuestro número de teléfono</h2>
-                 <h2 class="">Nuestro correo electrónico</h2>
+                 <h2 class="mt-12 mb-6">Contacts:</h2>
+                 <h2 class="mb-1">Our phone number</h2>
+                 <h2 class="">Our e-mail address</h2>
              </div>
              <div class="col-span-3 mx-4 font-medium border-t border-gray-200 font-montserrat">
-                 <h1 class="my-4">Copyright © 2024 Fika - Privacidad - Términos</h1>
+                 <h1 class="my-4">Copyright © 2024 Eventi - Privacy - Terms of Use</h1>
              </div>
          </section>
      </div>

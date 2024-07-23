@@ -10,7 +10,7 @@
     <title>Document</title>
     <script src="//unpkg.com/alpinejs" defer></script>
 </head>
-<body class="bg-[#F9F6EE]">
+<body class="bg-">
     {{$slot}}
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 </body>

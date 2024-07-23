@@ -1,5 +1,5 @@
 <div x-data="{ opened: false }" class="sticky top-0 z-40">
-    <nav class="z-40 w-full grid-cols-2 bg-[#DF9667] sticky top-0 backdrop-[2px]">
+    <nav class="z-40 w-full grid-cols-2 bg-[#063254] sticky top-0 backdrop-[2px]">
         <div class="inline-flex w-full">
             <x-buttonicon2></x-buttonicon2>
             <div class="z-30 py-2 pl-14">
@@ -15,7 +15,7 @@
                     class="fixed left-0 z-20 flex flex-col items-center justify-start h-screen pt-5 bg-white w-96 top-16">
                     <div class="w-full ml-6">
                         <button
-                            class="p-2 py-8 mt-2 text-2xl font-medium text-center text-black rounded-lg bg-fika-piel px-14 font-montserrat hover:bg-[#fb825a]">
+                            class="p-2 py-8 mt-2 text-2xl font-medium text-center text-white rounded-lg bg-fika-piel px-14 font-montserrat hover:bg-[#fb825a]">
                             <p>Servicios habilitados</p>
                         </button>
                     </div>

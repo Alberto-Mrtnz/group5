@@ -10,14 +10,14 @@
             </div>
 
 
-                <div class="grid pt-2 cols-start-2">
+                <div class="grid pt-2 cols-start-2 space-y-12">
                     <p class="p-4 rounded-lg w-80 bg-fika-piel">{{ $user->name }}</p>
                     <p class="p-4 rounded-lg w-80 bg-fika-piel">{{ $user->email }}</p>
                     <p class="p-4 rounded-lg w-80 bg-fika-piel">{{ $user->phone }}</p>
 
-
-
                 </div>
         </div>
+
+        
     </div>
 </x-layout>

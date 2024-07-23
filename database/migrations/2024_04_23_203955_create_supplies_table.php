@@ -23,6 +23,7 @@ return new class extends Migration
             $table->boolean('is_service');
             $table->string('address')->nullable();
             $table->text('experience');
+            $table->string('img');
             $table->foreignIdFor(User::class)->constrained();
             $table->foreignIdFor(Schedule::class)->constrained();
             $table->foreignIdFor(Category::class)->constrained();

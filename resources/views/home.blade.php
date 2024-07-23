@@ -37,7 +37,7 @@
 
         <div class="grid grid-cols-3 mb-12">
             @foreach ($supplies as $supply)
-                <x-event id="{{ $supply->id }}" title="{{ $supply->name }}" description="{{ $supply->description }}" />
+                <x-event id="{{ $supply->id }}" img="{{ $supply->img }}" title="{{ $supply->name }}" description="{{ $supply->description }}" />
             @endforeach
         </div>
     </div>

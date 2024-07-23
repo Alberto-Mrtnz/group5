@@ -50,6 +50,7 @@
                     </div>
 
                     <x-input titulo="¿Cuál es el rango de los precios?" type="text" name="phone"></x-input>
+                    <input type="file" id="image"><label for="">Include images or videos of the service you offer.</label><br>
                     <x-input titulo="Escribe una descripción sobre tu servicio. (Sé claro y breve)." type="text" name="phone"></x-input>
 
                 <x-buttom type="submit">REGISTER</x-buttom>

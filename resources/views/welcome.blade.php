@@ -3,7 +3,7 @@
          <nav class="py-6 fixed w-full top-0 z-40 backdrop-blur-sm">
              <div class="container flex mx-auto text-white">
 
-                <img src="{{ asset('img/logo.jpeg') }}" class="w-32">
+                <img src="{{ asset('img/eventi.png') }}" class="w-28 justify-items-center">
 
                  <div class="flex self-center justify-between flex-grow">
                      <div class="space-x-6">
@@ -73,9 +73,9 @@
              </div>
          </div>
 
-         <section class="grid grid-cols-3 text-black bg-[#6db1a4]" id="contacto">
+         <section class="grid grid-cols-3 text-black bg-[#DF9667]" id="contacto">
 
-            <img src="{{ asset('img/logo.jpeg') }}" class="w-36 justify-items-center">
+            <img src="{{ asset('img/eventi.png') }}" class="w-48 justify-items-center">
 
              <div class="col-span-1 font-medium font-montserrat">
                  <h1 class="my-8 text-center px-14">Dejanos un comentario sobre nuestro web site</h1>

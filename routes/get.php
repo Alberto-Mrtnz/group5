@@ -2,6 +2,7 @@
 
 use App\Models\Category;
 use App\Models\Supply;
+use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -35,17 +36,18 @@ Route::get('/service/{service}', function (Supply $service) {
     ]);
 });
 
-Route::get('/userprofile', function () {
+Route::get('/userprofile', function (Supply $service) {
     return view('userprofile', [
-        'user' => Auth::user()
+        'user' => Auth::user(),
+        'supply' => $service->load('user')
     ]);
-})->name('userprofile');
+});
 
-Route::get('/providerprofile', function () {
+Route::get('/provider/{user}', function (User $user) {
     return view('providerprofile',[
-        'user'=> Auth::user()
+        'proveedor'=> $user
     ]);
-})->name('providerprofile');
+})->name('provider');
 
 Route::get('/prueva', function () {
     return view('prueva');

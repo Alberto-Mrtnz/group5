@@ -2,7 +2,7 @@
     <div class="grid grid-cols-3 place-items-center">
 
         <div class="" style="">
-            <img src="{{ asset('img/LOGIN.jpg') }}" class="flex justify-around object-cover h-full w-full ">
+            <img src="{{ asset('img/LOGIN.jpg') }}" class="flex justify-around object-cover w-full h-full ">
         </div>
 
         <div class="col-span-2">
@@ -19,7 +19,7 @@
                 <div class="text-right">
                 </div>
 
-                <x-buttom type="submit">LOGIN</x-buttom>
+                <x-buttom>LOGIN</x-buttom>
             </form>
         </div>
     </div>

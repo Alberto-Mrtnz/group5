@@ -3,7 +3,7 @@
         <div x-data="{opened: false}" >
             <x-barra></x-barra>
 
-        <div class="grid grid-cols-3">
+        <div class="grid grid-cols-3 ">
             <div class="col-span-1 py-16">
                 <img class="w-64 mx-12 rounded-full" src="{{ asset('img/icon.png') }}">
             </div>

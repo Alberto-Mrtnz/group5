@@ -19,7 +19,8 @@ class CategorySeeder extends Seeder
             'Banquetes',
             'Aparatos Audiovisuales',
             'Mobiliario',
-            'Animación'
+            'Animación',
+            'Servicios'
         ];
 
         Category::factory(count($category))->sequence(fn ($sqn) => ['name' => $category[$sqn->index]])->create();

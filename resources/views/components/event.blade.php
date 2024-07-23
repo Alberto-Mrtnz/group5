@@ -1,4 +1,4 @@
-@props(['title', 'description', 'id'])
+@props(['title', 'description', 'id', 'img'])
 
 <a href="/service/{{ $id }}">
     <div class="pt-6 pr-6 pl-9">

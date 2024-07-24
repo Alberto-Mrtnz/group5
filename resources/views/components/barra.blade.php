@@ -26,11 +26,10 @@
                 </div>
 
                 <div class="w-full ml-6">
-                    <button
+                    <!--<button
                         class="p-2 py-8 mt-4 text-2xl font-medium text-center text-black rounded-lg bg-fika-piel px-28 font-montserrat hover:bg-[#194f3f]">
                         <p>Calendario</p>
-                    </button>
-
+                    </button>-->
                 </div>
 
                 <div class="w-full ml-6">

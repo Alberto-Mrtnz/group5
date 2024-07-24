@@ -1,12 +1,14 @@
 <div x-data="{ opened: false }" class="sticky top-0 z-40">
-    <nav class="z-40 w-full grid-cols-2 bg-[#DF9667] sticky top-0 backdrop-[2px]">
-        <div class="inline-flex justify-between items-center w-full">
-            <x-buttonicon2 />
-
-            <img src="{{ asset('img/eventi.png') }}" class="w-20 justify-items-center z-30 ml-14">
+    <nav class="z-40 w-full grid-cols-2 bg-[#063254] sticky top-0 backdrop-[2px]">
+        <div class="inline-flex w-full">
+            <x-buttonicon2></x-buttonicon2>
+            <div class="z-30 py-2 pl-14">
+                <img class="w-10 h-10 rounded-full" src="{{ asset('img/persona2.jpg') }}">
+            </div>
+            <img src="{{ asset('img/eventi.png') }}" class="w-20 justify-items-center">
             <div class="px-3 py-2">
-                <a href="/userprofile"><img class="justify-end w-10 h-10 rounded-full"
-                        src="{{ asset('img/persona2.jpg') }}"></a>
+
+                <a href="/userprofile"><img class="justify-end w-10 h-10 rounded-full" src="{{ asset('img/persona2.jpg') }}"></a>
             </div>
 
             <div x-show="opened"
@@ -18,12 +20,14 @@
                     </button>
                 </div>
 
-                <div class="w-full ml-6">
-                    <button
-                        class="p-2 px-32 py-8 mt-4 text-2xl font-medium text-center text-black rounded-lg bg-fika-piel font-montserrat hover:bg-[#fdb207]">
-                        <p>Reseñas </p>
-                    </button>
-                </div>
+<div x-show="opened"
+                    class="fixed left-0 z-20 flex flex-col items-center justify-start h-screen pt-5 bg-white w-96 top-16">
+                    <div class="w-full ml-6">
+                        <button
+                            class="p-2 py-8 mt-2 text-2xl font-medium text-center text-black rounded-lg bg-fika-piel px-14 font-montserrat hover:bg-[#fb825a]">
+                            <p>Servicios habilitados</p>
+                        </button>
+                    </div>
 
                 <div class="w-full ml-6">
                     <!--<button

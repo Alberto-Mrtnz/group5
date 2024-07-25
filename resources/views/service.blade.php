@@ -2,7 +2,7 @@
     <!-- Barra -->
     <x-barra></x-barra>
 
-    <!-- servivio -->
+    <!-- servicio -->
 
     <div class="relative grid grid-cols-2 gap-4 py-6 m-4 bg-white rounded-lg shadow-lg">
         <div class="mt-10">

@@ -1,5 +1,6 @@
 <?php
 
+
 namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
@@ -94,12 +95,6 @@ class SupplySeeder extends Seeder
                 'category_id' => Category::where('name', 'Mobiliario')->first()->id,
                 'schedule_id' => $schedules->random(),
             ],
-
-
-
-
-
-
             [
                 'name' => 'Round Table',
                 'quantity' => 20,
@@ -165,12 +160,6 @@ class SupplySeeder extends Seeder
                 'category_id' => Category::where('name', 'Mobiliario')->first()->id,
                 'schedule_id' => $schedules->random(),
             ],
-
-
-
-
-
-
             [
                 'name' => 'Stage Platform',
                 'quantity' => 5,
@@ -218,7 +207,7 @@ class SupplySeeder extends Seeder
                 'is_service' => true,
                 'address' => '987 Foodie Lane, Gourmet City',
                 'experience' => 'Served over 500 events with gourmet food options.',
-                'img' => 'catering-service.jpg',
+                'img' => 'catering-service,jpg',
                 'user_id' => $users->random(),
                 'category_id' => Category::where('name', 'Servicios')->first(),
                 'schedule_id' => $schedules->random(),
@@ -289,6 +278,78 @@ class SupplySeeder extends Seeder
                 'schedule_id' => $schedules->random(),
             ],
             [
+                'name' => 'Catering Service',
+                'quantity' => null,
+                'price' => 3000,
+                'description' => 'Full catering service for events.',
+                'is_service' => true,
+                'address' => '987 Foodie Lane, Gourmet City',
+                'experience' => 'Served over 500 events with gourmet food options.',
+                'user_id' => $users->random(),
+                'category_id' => Category::where('name', 'Servicios')->first()->id,
+                'schedule_id' => $schedules->random(),
+            ],
+            [
+                'name' => 'Projector',
+                'quantity' => 10,
+                'price' => 350,
+                'description' => 'High-resolution projector for presentations and events.',
+                'is_service' => false,
+                'address' => '432 Projection Drive, Visual City',
+                'experience' => 'Used in various conferences and movie nights.',
+                'user_id' => $users->random(),
+                'category_id' => Category::where('name', 'Aparatos Audiovisuales')->first()->id,
+                'schedule_id' => $schedules->random(),
+            ],
+            [
+                'name' => 'DJ Service',
+                'quantity' => null,
+                'price' => 500,
+                'description' => 'Professional DJ service for events.',
+                'is_service' => true,
+                'address' => '876 Music Avenue, Party Town',
+                'experience' => 'Over 300 events with a diverse music collection.',
+                'user_id' => $users->random(),
+                'category_id' => Category::where('name', 'Servicios')->first()->id,
+                'schedule_id' => $schedules->random(),
+            ],
+            [
+                'name' => 'Dance Floor',
+                'quantity' => 2,
+                'price' => 700,
+                'description' => 'Portable dance floor for events.',
+                'is_service' => false,
+                'address' => '210 Dance Street, Celebration City',
+                'experience' => 'Perfect for weddings and parties.',
+                'user_id' => $users->random(),
+                'category_id' => Category::where('name', 'Mobiliario')->first()->id,
+                'schedule_id' => $schedules->random(),
+            ],
+            [
+                'name' => 'Photo Booth',
+                'quantity' => 3,
+                'price' => 450,
+                'description' => 'Fun photo booth for event memories.',
+                'is_service' => false,
+                'address' => '321 Memory Lane, Snap City',
+                'experience' => 'Captures unforgettable moments at events.',
+                'user_id' => $users->random(),
+                'category_id' => Category::where('name', 'Servicios')->first()->id,
+                'schedule_id' => $schedules->random(),
+            ],
+            [
+                'name' => 'Decorative Lights',
+                'quantity' => 50,
+                'price' => 20,
+                'description' => 'Beautiful decorative lights for ambiance.',
+                'is_service' => false,
+                'address' => '654 Illumination Street, Glow City',
+                'experience' => 'Creates a magical atmosphere at events.',
+                'user_id' => $users->random(),
+                'category_id' => Category::where('name', 'Aparatos Audiovisuales')->first()->id,
+                'schedule_id' => $schedules->random(),
+            ],
+            [
                 'name' => 'Flower Arrangement',
                 'quantity' => 100,
                 'price' => 80,
@@ -296,7 +357,6 @@ class SupplySeeder extends Seeder
                 'is_service' => false,
                 'address' => '987 Bloom Street, Garden City',
                 'experience' => 'Adds beauty and elegance to any event.',
-                'img' => 'flower-arrangement.jpg',
                 'user_id' => $users->random(),
                 'category_id' => Category::where('name', 'Decoración')->first()->id,
                 'schedule_id' => $schedules->random(),
@@ -309,11 +369,14 @@ class SupplySeeder extends Seeder
                 'is_service' => false,
                 'address' => '123 Serve Avenue, Chef City',
                 'experience' => 'Used by professional caterers.',
-                'img' => 'catering-equipment.jpg',
                 'user_id' => $users->random(),
-                'category_id' => Category::where('name', 'Servicios')->first(),
+                //'category_id' => Category::where('name', 'Equipamiento')->first(),
                 'schedule_id' => $schedules->random(),
+                'category_id' => 1, // <--- Introduzca un category_id válido
             ],
+
+            //$supplies->save(),
+
             [
                 'name' => 'Tent',
                 'quantity' => 10,
@@ -322,7 +385,6 @@ class SupplySeeder extends Seeder
                 'is_service' => false,
                 'address' => '456 Shelter Road, Event City',
                 'experience' => 'Provides shelter for outdoor events.',
-                'img' => 'tent.jpg',
                 'user_id' => $users->random(),
                 'category_id' => Category::where('name', 'Mobiliario')->first()->id,
                 'schedule_id' => $schedules->random(),
@@ -335,22 +397,20 @@ class SupplySeeder extends Seeder
                 'is_service' => true,
                 'address' => '789 Safety Boulevard, Secure City',
                 'experience' => 'Ensures safety and security at events.',
-                'img' => 'security.jpg',
                 'user_id' => $users->random(),
-                'category_id' => Category::where('name', 'Servicios')->first(),
+                'category_id' => Category::where('name', 'Servicios')->first()->id,
                 'schedule_id' => $schedules->random(),
             ],
             [
-                'name' => 'Face painting',
+                'name' => 'Event Planner',
                 'quantity' => null,
                 'price' => 2500,
-                'description' => 'Profesional artist for children.',
+                'description' => 'Professional event planning services.',
                 'is_service' => true,
                 'address' => '321 Plan Street, Organize City',
-                'experience' => '',
-                'img' => 'face-painting.jpg',
+                'experience' => 'Coordinates all aspects of events.',
                 'user_id' => $users->random(),
-                'category_id' => Category::where('name', 'Servicios')->first(),
+                'category_id' => Category::where('name', 'Servicios')->first()->id,
                 'schedule_id' => $schedules->random(),
             ],
         ];

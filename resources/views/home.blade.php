@@ -40,6 +40,5 @@
                 <x-event id="{{ $supply->id }}" img="{{ $supply->img }}" title="{{ $supply->name }}" description="{{ $supply->description }}" />
             @endforeach
         </div>
-        
     </div>
 </x-layout>

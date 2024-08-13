@@ -7,14 +7,13 @@
 
                  <div class="flex self-center justify-between flex-grow">
                      <div class="space-x-6">
-                         <a href="#aboutUs" class="border-white font-montserrat hover:border-b-4">Acerca de</a>
-                         <a href="#ourServices" class="border-white font-montserrat hover:border-b-4">Nuestro
-                             servicios</a>
-                         <a href="#contacto" class="border-white font-montserrat hover:border-b-4">Contactos</a>
+                         <a href="#aboutUs" class="border-white font-montserrat hover:border-b-4">About Us</a>
+                         <a href="#ourServices" class="border-white font-montserrat hover:border-b-4">Our services</a>
+                         <a href="#contacto" class="border-white font-montserrat hover:border-b-4">Contact</a>
                      </div>
                      <div class="space-x-4">
-                         <a href="{{ route('login') }}" class="font-montserrat hover:text-gray-500">Iniciar sesión</a>
-                          <a href="{{ route('register') }}" class="p-2 rounded-lg font-montserrat hover:text-gray-500">Registrarse</a>
+                         <a href="{{ route('login') }}" class="font-montserrat hover:text-gray-500">Login</a>
+                          <a href="{{ route('register') }}" class="p-2 rounded-lg font-montserrat hover:text-gray-500">Register</a>
                      </div>
                  </div>
              </div>
@@ -23,7 +22,7 @@
          <div class="relative w-full h-screen mt-50">
              <img src="{{ asset('img/fondo-homepage.jpg') }}" class="w-full h-full">
              <div class="absolute inset-0 flex items-center justify-center">
-                 <h2 class="text-5xl text-white font-moon mt-72">Donde encuentras los mejores lugares para tus eventos
+                 <h2 class="text-5xl text-white font-moon mt-72">Where to find the best places for your events
                  </h2>
              </div>
          </div>
@@ -31,11 +30,9 @@
          <div id="aboutUs" class="relative flex h-screen">
              <div
                  class="absolute z-30 bottom-32 left-[160px] text-center border border-transparent bg-eventi-gris text-black py-16 px-16 w-2/5">
-                 <h2 class="font-montserrat font-semibold text-center text-2xl pb-2.5">¿Quiénes somos?</h2>
-                 <h2 class="text-xl font-montserrat">Facilitar el proceso de organización de eventos y celebraciones a
-                     los salvadoreños mediante el desarrollo de una plataforma online que optimice la búsqueda y
-                     contratación de servicios relacionados con eventos para que la gente pueda ahorrar dinero y
-                     personalizar sus eventos por su cuenta.</h2>
+                 <h2 class="font-montserrat font-semibold text-center text-2xl pb-2.5">Who are we?</h2>
+                 <h2 class="text-xl font-montserrat">Facilitate the process of organizing events and celebrations for Salvadorans by developing an online platform that optimizes the search and contracting of event-related services so that people can save money and customize their events on their own.
+                    customize their events on their own.</h2>
              </div>
 
              <div class="absolute right-[160px]">

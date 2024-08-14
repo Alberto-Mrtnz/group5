@@ -40,6 +40,7 @@ Route::get('/userprofile', function (Supply $service) {
     return view('userprofile', [
         'user' => Auth::user(),
         'supply' => $service->load('user')
+        
     ]);
 });
 

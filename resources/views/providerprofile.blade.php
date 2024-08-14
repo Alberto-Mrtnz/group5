@@ -8,7 +8,7 @@
                 <div class="pl-8"> <img class="w-64 rounded-full mb-" src="{{ asset('img/icon.png') }}"></div>
 
 
-                {{ $proveedor}}
+                    <p class="p-4 rounded-lg w-80 bg-fika-piel">{{ $proveedor->name }}</p>
                     <p class="p-4 rounded-lg w-80 bg-fika-piel">{{ $proveedor->email }}</p>
                     <p class="p-4 rounded-lg w-80 bg-fika-piel">{{ $proveedor->phone }}</p>
                     <p class="p-4 rounded-lg w-80 bg-fika-piel">{{ $proveedor->birthday }}</p>

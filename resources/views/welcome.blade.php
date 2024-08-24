@@ -1,7 +1,7 @@
  <x-layout>
      <div>
          <nav class="py-6 fixed w-full top-0 z-40 backdrop-blur-sm">
-             <div class="container flex mx-auto text-white">
+             <div class="container flex mx-auto text-black">
 
                  <img src="{{ asset('img/eventi.png') }}" class="w-28 justify-items-center">
 
@@ -79,16 +79,34 @@
              <h1 class="py-10 text-2xl font-semibold text-center font-montserrat">Client Experiences</h1>
              <div class="grid grid-cols-3 place-items-center">
 
-                 <x-review />
+                 <div class="mx-4 text-black border-transparent border-2 rounded-xl bg-eventi-rosa">
+                     <img class="w-10 h-10 mt-4 ml-4 rounded-full" src="{{ asset('img/icon.png') }}">
+                     <h1 class="px-12 pb-8 text-center">"Our product launch was a huge success because of Eventi. Our
+                         clients were thrilled with the sleek modern location, the excellent AV setup, and the
+                         delectable catering. Their coordinator for the event was really effective. Eventi assisted us
+                         in showcasing our brand with precision."</h1>
+                 </div>
 
-                 <x-review />
+                 <div class="mx-4 text-black border-transparent border-2 rounded-xl bg-eventi-rosa">
+                     <img class="w-10 h-10 mt-4 ml-4 rounded-full" src="{{ asset('img/icon.png') }}">
+                     <h1 class="px-12 pb-8 text-center">"Eventi made our celebration truly memorable. Their attention to
+                         detail and
+                         professional service exceeded our expectations."</h1>
+                 </div>
 
-                 <x-review />
+                 <div class="mx-4 text-black border-transparent border-2 rounded-xl bg-eventi-rosa">
+                     <img class="w-10 h-10 mt-4 ml-4 rounded-full" src="{{ asset('img/icon.png') }}">
+                     <h1 class="px-12 pb-8 text-center">"The Eventi website has an excellent design that benefits
+                         vendors as well as customers. It was simple for me as a customer to look through locations,
+                         weigh services, and make judgments. For vendors, this is a great way to present their products.
+                         Everyone's involvement in event preparation is streamlined by the user-friendly design and
+                         smooth booking procedure."</h1>
+                 </div>
 
              </div>
          </div>
 
-         <section class="grid grid-cols-3 text-black bg-eventi-cafe" id="contacto">
+         <section class="grid grid-cols-3 text-black bg-[#64A1B9]" id="contacto">
 
              <img src="{{ asset('img/mainlogo.png') }}" class="w-48 justify-items-center">
 

@@ -1,7 +1,7 @@
  <x-layout>
      <div>
-         <nav class="py-6 fixed w-full top-0 z-40 backdrop-blur-sm">
-             <div class="container flex mx-auto text-black">
+         <nav id="bar" class="py-2 fixed w-full top-0 z-40 backdrop-blur-sm">
+             <div class="container flex mx-auto">
 
                  <img src="{{ asset('img/eventi.png') }}" class="w-28 justify-items-center">
 
@@ -23,7 +23,7 @@
          </nav>
 
          <div class="relative w-full h-screen mt-50">
-             <img src="{{ asset('img/fondo-homepage.jpg') }}" class="w-full h-full">
+             <img src="{{ asset('img/fondo-homepage.jpg') }}" class="w-full h-full" id="img">
              <div class="absolute inset-0 flex items-center justify-center">
                  <h2 class="text-5xl text-white font-moon mt-72">Where to find the best places for your events
                  </h2>
@@ -130,4 +130,17 @@
              </div>
          </section>
      </div>
+
+     <script>
+         document.addEventListener('scroll', () => {
+             const navbar = document.getElementById('bar');
+             const img = document.getElementById('img');
+
+             if (window.scrollY < (img.getBoundingClientRect().height - 50)) {
+                 navbar.classList.add('text-white');
+             } else {
+                 navbar.classList.remove('text-white');
+             }
+         })
+     </script>
  </x-layout>

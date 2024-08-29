@@ -17,7 +17,7 @@ class UserController extends Controller
         ]);
 
         if (Auth::attempt($datosVerificados)) {
-            return redirect('/');
+            return redirect('/home');
         }
 
         return back()->withErrors([
@@ -37,14 +37,18 @@ class UserController extends Controller
             'is_provider' => 'required|boolean'
         ]);
 
-
-
         $user = User::create($datosVerificados);
 
         if($user) {
             Auth::login($user);
             return redirect('/home');
         }
+    }
 
+    public function logout()
+    {
+        Auth::logout();
+        request()->session()->regenerate();
+        return redirect('login');
     }
 }

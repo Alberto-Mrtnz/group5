@@ -1,28 +1,40 @@
  <x-layout>
      <div>
-         <nav id="bar" class="py-2 fixed w-full top-0 z-40 backdrop-blur-sm">
+         <nav id="bar" class="py-2 fixed w-full top-0 z-40 backdrop-blur-sm text-white">
              <div class="container flex mx-auto">
 
-                 <img src="{{ asset('img/eventi.png') }}" class="w-28 justify-items-center">
+                 <a href="#home">
+                    <img src="{{ asset('img/eventi.png') }}" class="w-28 justify-items-center">
+                 </a>
 
                  <div class="flex self-center justify-between flex-grow">
                      <div class="space-x-6">
-                         <a href="#aboutUs" class="border-white font-montserrat hover:border-b-4">About Us</a>
-                         <a href="#misionVision" class="border-white font-montserrat hover:border-b-4">Mision</a>
-                         <a href="#misionVision" class="border-white font-montserrat hover:border-b-4">Vision</a>
-                         <a href="#ourServices" class="border-white font-montserrat hover:border-b-4">Our services</a>
-                         <a href="#contacto" class="border-white font-montserrat hover:border-b-4">Contact</a>
+                         <a href="#aboutUs" class="border-white font-montserrat hover:border-b-2">About Us</a>
+                         <a href="#misionVision" class="border-white font-montserrat hover:border-b-2">Mision</a>
+                         <a href="#misionVision" class="border-white font-montserrat hover:border-b-2">Vision</a>
+                         <a href="#ourServices" class="border-white font-montserrat hover:border-b-2">Our services</a>
+                         <a href="#contacto" class="border-white font-montserrat hover:border-b-2">Contact</a>
                      </div>
-                     <div class="space-x-4">
-                         <a href="{{ route('login') }}" class="font-montserrat hover:text-gray-500">Login</a>
-                         <a href="{{ route('register') }}"
-                             class="p-2 rounded-lg font-montserrat hover:text-gray-500">Register</a>
-                     </div>
+
+                     @guest
+                         <div class="space-x-4">
+                             <a href="{{ route('login') }}" class="font-montserrat hover:text-gray-500">Login</a>
+                             <a href="{{ route('register') }}"
+                                 class="p-2 rounded-lg font-montserrat hover:text-gray-500">Register</a>
+                         </div>
+                     @endguest
+
+                     @auth
+                         <form action="/logout" method="post">
+                             @csrf
+                             <button class="font-montserrat hover:text-gray-500" type="submit">Log out</button>
+                         </form>
+                     @endauth
                  </div>
              </div>
          </nav>
 
-         <div class="relative w-full h-screen mt-50">
+         <div id="home" class="relative w-full h-screen mt-50">
              <img src="{{ asset('img/fondo-homepage.jpg') }}" class="w-full h-full" id="img">
              <div class="absolute inset-0 flex items-center justify-center">
                  <h2 class="text-5xl text-white font-moon mt-72">Where to find the best places for your events
@@ -136,10 +148,10 @@
              const navbar = document.getElementById('bar');
              const img = document.getElementById('img');
 
-             if (window.scrollY < (img.getBoundingClientRect().height - 50)) {
-                 navbar.classList.add('text-white');
-             } else {
+             if (window.scrollY > (img.getBoundingClientRect().height - 50)) {
                  navbar.classList.remove('text-white');
+             } else {
+                 navbar.classList.add('text-white');
              }
          })
      </script>

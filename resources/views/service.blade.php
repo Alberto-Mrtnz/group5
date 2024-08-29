@@ -3,7 +3,9 @@
     <x-barra></x-barra>
 
     <!-- servicio -->
-
+    @foreach( $supply->ratings as $rating )
+        {{ $rating->comment }}
+    @endforeach
     <div class="shadow-lg">
         <div class="relative grid grid-cols-2 gap-4 py-6 m-4 bg-white rounded-lg">
             <div class="mt-10">

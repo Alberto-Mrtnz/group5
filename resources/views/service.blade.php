@@ -3,9 +3,7 @@
     <x-barra></x-barra>
 
     <!-- servicio -->
-    @foreach( $supply->ratings as $rating )
-        {{ $rating->comment }}
-    @endforeach
+
     <div class="shadow-lg">
         <div class="relative grid grid-cols-2 gap-4 py-6 m-4 bg-white rounded-lg">
             <div class="mt-10">
@@ -85,17 +83,16 @@
             </div>
         </div>
 
-        <div class="grid grid-cols-2">
+        <div class="grid grid-cols-2 mx-4">
             <div class="col-span-1 bg-gray-200 p-2">
                 <h1 class="py-1.5">JUAN PABLO ll</h1>
                 <div class="flex space-x-2">
                     <img class="w-10 h-10 rounded-full" src="{{ asset('img/persona2.jpg') }}">
-                    <h1>"The Eventi website has an excellent design that benefits
-                        vendors as well as customers. It was simple for me as a customer
-                         to look through locations, weigh services, and make judgments.
-                        For vendors, this is a great way to present their products.</h1>
-                </div>
-                <div class="my- ml-">
+                        @foreach( $supply->ratings as $rating )
+                            {{ $rating->comment }}
+                        @endforeach
+                </div>x
+                <div class="">
                     <div x-data="{
                         rating: 0,
                         hoverRating: 0,

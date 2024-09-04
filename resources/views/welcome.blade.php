@@ -48,8 +48,7 @@
                  <h2 class="font-montserrat font-semibold text-center text-2xl pb-2.5">Who are we?</h2>
                  <h2 class="text-xl font-montserrat">Facilitate the process of organizing events and celebrations for
                      Salvadorans by developing an online platform that optimizes the search and contracting of
-                     event-related services so that people can save money and customize their events on their own.
-                     customize their events on their own.</h2>
+                     event-related services so that people can save money and customize their events on their own.</h2>
              </div>
 
              <div class="absolute right-[160px]">
@@ -118,7 +117,7 @@
              </div>
          </div>
 
-         <section class="grid grid-cols-3 text-black bg-[#64A1B9]" id="contacto">
+         <section class="grid grid-cols-3 text-black bg-eventi-azul" id="contacto">
 
              <img src="{{ asset('img/mainlogo.png') }}" class="w-48 justify-items-center">
 

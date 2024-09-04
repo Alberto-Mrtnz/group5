@@ -1,10 +1,10 @@
  <x-layout>
      <div>
-         <nav id="bar" class="py-2 fixed w-full top-0 z-40 backdrop-blur-sm text-white">
+         <nav id="bar" class="fixed top-0 z-40 w-full py-2 text-white backdrop-blur-sm">
              <div class="container flex mx-auto">
 
                  <a href="#home">
-                    <img src="{{ asset('img/eventi.png') }}" class="w-28 justify-items-center">
+                    <img src="{{ asset('img/whiteLogo.png') }}" class="mr-8 w-28 justify-items-center">
                  </a>
 
                  <div class="flex self-center justify-between flex-grow">
@@ -90,7 +90,7 @@
              <h1 class="py-10 text-2xl font-semibold text-center font-montserrat">Client Experiences</h1>
              <div class="grid grid-cols-3 place-items-center">
 
-                 <div class="mx-4 text-black border-transparent border-2 rounded-xl bg-eventi-rosa">
+                 <div class="mx-4 text-black border-2 border-transparent rounded-xl bg-eventi-rosa">
                      <img class="w-10 h-10 mt-4 ml-4 rounded-full" src="{{ asset('img/icon.png') }}">
                      <h1 class="px-12 pb-8 text-center">"Our product launch was a huge success because of Eventi. Our
                          clients were thrilled with the sleek modern location, the excellent AV setup, and the
@@ -98,14 +98,14 @@
                          in showcasing our brand with precision."</h1>
                  </div>
 
-                 <div class="mx-4 text-black border-transparent border-2 rounded-xl bg-eventi-rosa">
+                 <div class="mx-4 text-black border-2 border-transparent rounded-xl bg-eventi-rosa">
                      <img class="w-10 h-10 mt-4 ml-4 rounded-full" src="{{ asset('img/icon.png') }}">
                      <h1 class="px-12 pb-8 text-center">"Eventi made our celebration truly memorable. Their attention to
                          detail and
                          professional service exceeded our expectations."</h1>
                  </div>
 
-                 <div class="mx-4 text-black border-transparent border-2 rounded-xl bg-eventi-rosa">
+                 <div class="mx-4 text-black border-2 border-transparent rounded-xl bg-eventi-rosa">
                      <img class="w-10 h-10 mt-4 ml-4 rounded-full" src="{{ asset('img/icon.png') }}">
                      <h1 class="px-12 pb-8 text-center">"The Eventi website has an excellent design that benefits
                          vendors as well as customers. It was simple for me as a customer to look through locations,
@@ -124,7 +124,7 @@
              <div class="col-span-1 font-medium font-montserrat">
                  <h1 class="my-8 text-center px-14">Leave us a comment about our web site</h1>
                  <form action="" method="post" class="flex flex-col mx-16">
-                     <input class="text-black w-full h-8 rounded-2xl" />
+                     <input class="w-full h-8 text-black rounded-2xl" />
                      <button
                          class="bg-fika-wisteria w-28 ml-auto rounded-2xl font-medium py-0.5 px-4 font-montserrat text-center text-lg mt-2"
                          type="submit">Send</button>

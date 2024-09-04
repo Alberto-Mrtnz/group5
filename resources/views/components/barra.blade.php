@@ -3,9 +3,9 @@
         <div class="inline-flex w-full">
             <x-buttonicon2></x-buttonicon2>
             <div class="z-30 py-2 pl-14">
-                <img class="w-10 h-10 rounded-full" src="{{ asset('img/persona2.jpg') }}">
+
             </div>
-            <img src="{{ asset('img/eventi.png') }}" class="w-20 justify-items-center">
+            <img src="{{ asset('img/whiteLogo.png') }}" class="w-20 justify-items-center">
             <div class="px-3 py-2">
 
                 <a href="/userprofile"><img class="justify-end w-10 h-10 rounded-full" src="{{ asset('img/persona2.jpg') }}"></a>

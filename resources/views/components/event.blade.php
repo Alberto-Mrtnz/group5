@@ -3,7 +3,7 @@
 <a href="/service/{{ $id }}">
     <div class="pt-6 pr-6 pl-9">
         <div class="max-w-sm overflow-hidden transition duration-300 ease-in-out delay-150 rounded-lg shadow-lg bg-gray-200 hover:-translate-y-1 hover:scale-1">
-            <img class="m-6 rounded-lg w-min size-56" src="{{ asset('img/supplies/'.$img) }}">
+            <img class="m-6 rounded-lg w-min size-56 w-max-full mx-auto" src="{{ asset('img/supplies/'.$img) }}">
             <div class="px-1 py-1">
               <div class="mb-2 font-bold text-center">{{$title}}</div>
               <p class="text-base text-center text-gray-700">

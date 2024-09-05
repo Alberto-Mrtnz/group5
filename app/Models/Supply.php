@@ -13,6 +13,10 @@ class Supply extends Model
 {
     use HasFactory;
 
+    protected $guarded = [
+        'id'
+    ];
+
     public function category() {
         return $this->belongsTo(Category::class);
     }
@@ -25,12 +29,8 @@ class Supply extends Model
         return $this->belongsTo(User::class);
     }
 
-    
-
-
-    protected $guarded = [
-        'id'
-    ];
-
-
+    public function ratings()
+    {
+        return $this->hasMany(Rating::class);
+    }
 }

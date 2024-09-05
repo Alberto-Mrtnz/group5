@@ -25,7 +25,7 @@ class DatabaseSeeder extends Seeder
             BudgetSeeder::class,
             SupplySeeder::class,
             BudgetItemSeeder::class,
-
+            RatingSeeder::class,
         ]);
 
         //User::factory()->create([

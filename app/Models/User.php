@@ -46,4 +46,9 @@ class User extends Authenticatable
     public function supplies() {
         return $this->hasMany(Supply::class);
     }
+
+    public function ratings()
+    {
+        return $this->hasMany(Rating::class);
+    }
 }

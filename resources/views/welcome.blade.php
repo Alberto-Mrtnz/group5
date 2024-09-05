@@ -4,7 +4,7 @@
              <div class="container flex mx-auto">
 
                  <a href="#home">
-                    <img src="{{ asset('img/whiteLogo.png') }}" class="mr-8 w-28 justify-items-center">
+                     <img src="{{ asset('img/whiteLogo.png') }}" class="mr-8 w-28 justify-items-center">
                  </a>
 
                  <div class="flex self-center justify-between flex-grow">
@@ -56,16 +56,20 @@
              </div>
          </div>
 
-         <div id="misionVision" class="relative flex h-screen">
+         <div id="misionVision" class="gap-x-10 grid grid-cols-2 h-screen mx-12">
              <div
-                 class="absolute z-30 bottom-32 left-[160px] text-center border border-transparent bg-eventi-gris text-black py-16 px-16 w-2/5">
+                 class="col-span-1 text-center border border-transparent bg-eventi-gris text-black my-auto mx-auto p-14">
                  <h2 class="font-montserrat font-semibold text-center text-2xl pb-2.5">Mision</h2>
                  <h2 class="text-xl font-montserrat">To provide the organized search of services prior to an event or
                      celebration offering diverse services exceeding the expectations of our users.</h2>
              </div>
 
-             <div class="absolute right-[160px]">
-                 <img src="{{ asset('img/imagen restaunate.jpg') }}" class="h-[calc(100vh-96px)] my-12">
+             <div
+                 class="col-span-1 text-center border border-transparent bg-eventi-gris text-black my-auto mx-auto p-14">
+                 <h2 class="font-montserrat font-semibold text-center text-2xl pb-2.5">Vision</h2>
+                 <h2 class="text-xl font-montserrat">Innovate in the organization of events such as weddings, birthdays,
+                     catering and more, constantly showing excellence by adding new tools constantly and expanding
+                     abroad. </h2>
              </div>
          </div>
 
@@ -119,7 +123,7 @@
 
          <section class="grid grid-cols-3 text-black bg-eventi-azul" id="contacto">
 
-             <img src="{{ asset('img/mainlogo.png') }}" class="w-48 justify-items-center">
+             <img src="{{ asset('img/mainlogo.png') }}" class="w-48 my-auto mx-auto">
 
              <div class="col-span-1 font-medium font-montserrat">
                  <h1 class="my-8 text-center px-14">Leave us a comment about our web site</h1>
@@ -131,10 +135,10 @@
                  </form>
              </div>
 
-             <div class="col-span-1 ml-8 font-medium font-montserrat">
+             <div class="col-span-1 ml-8 font-medium font-montserrat mx-8">
                  <h2 class="mt-12 mb-6">Contacts:</h2>
-                 <h2 class="mb-1">Our phone number</h2>
-                 <h2 class="">Our e-mail address</h2>
+                 <h2 class="mb-1 text-end">Our phone number</h2>
+                 <h2 class="text-end">Our e-mail address</h2>
              </div>
              <div class="col-span-3 mx-4 font-medium border-t border-gray-200 font-montserrat">
                  <h1 class="my-4">Copyright © 2024 Eventi - Privacy - Terms of Use</h1>
@@ -152,6 +156,8 @@
              } else {
                  navbar.classList.add('text-white');
              }
+
+
          })
      </script>
  </x-layout>

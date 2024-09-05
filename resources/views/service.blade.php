@@ -70,7 +70,7 @@
                 <div class="m bg-slate-300 rounded-lg m-0.5 p-20">
                     <div class="mb-3">
                         <p class="mb-3 font-bold">{{ $supply->name }}</p>
-                        <h1 class="font-semibold">DESCRIPCTION</h1>
+                        <h1 class="font-semibold">DESCRIPTION</h1>
                         <p>{{ $supply->description }}</p>
                     </div>
                 </div>

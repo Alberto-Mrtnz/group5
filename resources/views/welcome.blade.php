@@ -4,7 +4,7 @@
              <div class="container flex mx-auto">
 
                  <a href="#home">
-                     <img src="{{ asset('img/whiteLogo.png') }}" class="mr-8 w-28 justify-items-center">
+                     <img id="logo" src="{{ asset('img/whiteLogo.png') }}" class="mr-8 w-28 justify-items-center">
                  </a>
 
                  <div class="flex self-center justify-between flex-grow">
@@ -150,11 +150,14 @@
          document.addEventListener('scroll', () => {
              const navbar = document.getElementById('bar');
              const img = document.getElementById('img');
+             const logo = document.getElementById('logo');
 
              if (window.scrollY > (img.getBoundingClientRect().height - 50)) {
                  navbar.classList.remove('text-white');
+                 logo.src = "{{ asset('img/mainlogo.png') }}";
              } else {
                  navbar.classList.add('text-white');
+                 logo.src = "{{ asset('img/whiteLogo.png') }}";
              }
 
 

@@ -54,8 +54,13 @@ class UserSeeder extends Seeder
         User::factory(count($users))->sequence( fn ($sqn) => $users[$sqn->index])->create();
 
         User::factory()->create([
-            'email' => 'test@example.com',
+            'email' => 'seller@example.com',
             'is_provider' => '1',
+        ]);
+
+        User::factory()->create([
+            'email' => 'client@example.com',
+            'is_provider' => '0',
         ]);
 
         //User::factory(5)->create();

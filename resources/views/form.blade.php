@@ -9,7 +9,7 @@
         <div class="mx-40 col-span-2 max-h-screen">
             <div class="my-12 overflow-container">
 
-                <img src="{{ asset('img/logo.jpeg') }}" class="w-36 justify-items-center">
+                <img src="{{ asset('img/logo.jpeg') }}" class="w-36 mx-auto">
                 <h1 class="my-8 text-2xl text-center font-semibold font-monserrat">Service Owners Questionnaire</h1>
                 <form action="/login" method="POST">
                 @csrf

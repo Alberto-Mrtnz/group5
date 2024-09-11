@@ -1,7 +1,10 @@
 <x-layout>
     <div class="relative">
+        <script>
 
-        <x-barra></x-barra>
+        </script>
+
+        <x-barra/>
         <!-- buscador -->
 
         <label class="block px-20 pt-5">
@@ -27,20 +30,35 @@
             </div>
         </label>
 
-        <!-- categorias -->
+        <div x-data="{categoryFilter: 'none'}">
+            <!-- categorias -->
+            <button  @click='{ categoryFilter: "hi"}'>d</button>
+            <div class="flex items-center justify-center">
+                @foreach ($categories as $category)
+                    <x-buttonicon  >{{ $category->name }}</x-buttonicon>
+                @endforeach
+            </div>
 
-        @foreach ($categories as $category)
-            <x-buttonicon>{{ $category->name }}</x-buttonicon>
-        @endforeach
+            <p x-text="categoryFilter"></p>
 
-        <!-- tarjeta -->
-
-        <div class="grid grid-cols-3 mb-12">
-            @foreach ($supplies as $supply)
-                <x-event id="{{ $supply->id }}" img="{{ $supply->img }}" title="{{ $supply->name }}" description="{{ $supply->description }}" />
-            @endforeach
+            <!-- tarjeta -->
+            <div class="grid grid-cols-3 mb-12">
+                @foreach ($supplies as $supply)
+                    <x-event id="{{ $supply->id }}" img="{{ $supply->img }}" title="{{ $supply->name }}" description="{{ $supply->description }}" />
+                @endforeach
+            </div>
         </div>
-
-
     </div>
+    
+    <script>
+        document.addEventListener('alpine:init', () => {
+            Alpine.data('dropdown', () => ({
+                open: false,
+
+                toggle() {
+                    this.open = ! this.open
+                },
+            }))
+        })
+    </script>
 </x-layout>

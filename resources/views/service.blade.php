@@ -10,16 +10,16 @@
                 <swiper-container class="flex items-center justify-center w-9/12 mx-20" effect="cards" grab-cursor="true"
                     pagination="true" grab-cursor="true" centered-slides="true" loop="true">
                     <swiper-slide class="bg-center">
-                        <img class="w-5/6 h-4/5 mx-auto rounded-lg" src="{{ asset("img/supplies/$supply->id/$supply->id.1.jpg") }}">
+                        <img class="w-full h-80 mx-auto rounded-lg" src="{{ asset("img/supplies/$supply->id/$supply->id.1.jpg") }}">
                     </swiper-slide>
                     <swiper-slide class="bg-center ">
-                        <img class="w-5/6 h-4/5 mx-auto rounded-lg" src="{{ asset("img/supplies/$supply->id/$supply->id.2.jpg") }}">
+                        <img class="w-full h-80 mx-auto rounded-lg" src="{{ asset("img/supplies/$supply->id/$supply->id.2.jpg") }}">
                     </swiper-slide>
                     <swiper-slide class="bg-center">
-                        <img class="w-5/6 h-4/5 mx-auto rounded-lg" src="{{ asset("img/supplies/$supply->id/$supply->id.3.jpg") }}">
+                        <img class="w-full h-80 mx-auto rounded-lg" src="{{ asset("img/supplies/$supply->id/$supply->id.3.jpg") }}">
                     </swiper-slide>
                     <swiper-slide class="bg-center ">
-                        <img class="w-5/6 h-4/5 mx-auto rounded-lg" src="{{ asset("img/supplies/$supply->id/$supply->id.4.jpg") }}">
+                        <img class="w-full h-80 mx-auto rounded-lg" src="{{ asset("img/supplies/$supply->id/$supply->id.4.jpg") }}">
                     </swiper-slide>
                 </swiper-container>
 
@@ -70,7 +70,7 @@
                 <div class="m bg-slate-300 rounded-lg m-0.5 p-20">
                     <div class="mb-3">
                         <p class="mb-3 font-bold">{{ $supply->name }}</p>
-                        <h1 class="font-semibold">DESCRIPCTION</h1>
+                        <h1 class="font-semibold">DESCRIPTION</h1>
                         <p>{{ $supply->description }}</p>
                     </div>
                 </div>

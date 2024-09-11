@@ -4,7 +4,7 @@
              <div class="container flex mx-auto">
 
                  <a href="#home">
-                     <img src="{{ asset('img/whiteLogo.png') }}" class="mr-8 w-28 justify-items-center">
+                     <img id="logo" src="{{ asset('img/whiteLogo.png') }}" class="mr-8 w-28 justify-items-center">
                  </a>
 
                  <div class="flex self-center justify-between flex-grow">
@@ -37,7 +37,7 @@
          <div id="home" class="relative w-full h-screen mt-50">
              <img src="{{ asset('img/fondo-homepage.jpg') }}" class="w-full h-full" id="img">
              <div class="absolute inset-0 flex items-center justify-center">
-                 <h2 class="text-5xl text-white font-moon mt-72">Where to find the best places for your events
+                 <h2 class="text-5xl text-white font-main mt-96">Your event, your style, your choice!
                  </h2>
              </div>
          </div>
@@ -45,7 +45,7 @@
          <div id="aboutUs" class="relative flex h-screen">
              <div
                  class="absolute z-30 bottom-32 left-[160px] text-center border border-transparent bg-eventi-gris text-black py-16 px-16 w-2/5">
-                 <h2 class="font-montserrat font-semibold text-center text-2xl pb-2.5">Who are we?</h2>
+                 <h2 class="font-main font-semibold text-center text-2xl pb-2.5">Who are we?</h2>
                  <h2 class="text-xl font-montserrat">Facilitate the process of organizing events and celebrations for
                      Salvadorans by developing an online platform that optimizes the search and contracting of
                      event-related services so that people can save money and customize their events on their own.</h2>
@@ -59,14 +59,14 @@
          <div id="misionVision" class="gap-x-10 grid grid-cols-2 h-screen mx-12">
              <div
                  class="col-span-1 text-center border border-transparent bg-eventi-gris text-black my-auto mx-auto p-14">
-                 <h2 class="font-montserrat font-semibold text-center text-2xl pb-2.5">Mision</h2>
+                 <h2 class="font-main font-semibold text-center text-2xl pb-2.5">Mision</h2>
                  <h2 class="text-xl font-montserrat">To provide the organized search of services prior to an event or
                      celebration offering diverse services exceeding the expectations of our users.</h2>
              </div>
 
              <div
                  class="col-span-1 text-center border border-transparent bg-eventi-gris text-black my-auto mx-auto p-14">
-                 <h2 class="font-montserrat font-semibold text-center text-2xl pb-2.5">Vision</h2>
+                 <h2 class="font-main font-semibold text-center text-2xl pb-2.5">Vision</h2>
                  <h2 class="text-xl font-montserrat">Innovate in the organization of events such as weddings, birthdays,
                      catering and more, constantly showing excellence by adding new tools constantly and expanding
                      abroad. </h2>
@@ -74,7 +74,7 @@
          </div>
 
          <div id="ourServices" class="h-screen bg-">
-             <h1 class="py-10 text-2xl font-semibold text-center font-montserrat">Our services</h1>
+             <h1 class="py-10 text-2xl font-semibold text-center font-main">Our services</h1>
              <swiper-container class="flex items-center justify-center pb-10 mx-12" pagination="true" effect="coverflow"
                  grab-cursor="true" centered-slides="true" slides-per-view="auto" coverflow-effect-rotate="50"
                  coverflow-effect-stretch="0" coverflow-effect-depth="100" coverflow-effect-modifier="1"
@@ -91,7 +91,7 @@
          </div>
 
          <div class="grid h-screen mx-12 bg- place-content-center">
-             <h1 class="py-10 text-2xl font-semibold text-center font-montserrat">Client Experiences</h1>
+             <h1 class="py-10 text-2xl font-semibold text-center font-main">Client Experiences</h1>
              <div class="grid grid-cols-3 place-items-center">
 
                  <div class="mx-4 text-black border-2 border-transparent rounded-xl bg-eventi-rosa">
@@ -150,14 +150,15 @@
          document.addEventListener('scroll', () => {
              const navbar = document.getElementById('bar');
              const img = document.getElementById('img');
+             const logo = document.getElementById('logo');
 
              if (window.scrollY > (img.getBoundingClientRect().height - 50)) {
                  navbar.classList.remove('text-white');
+                 logo.src = "{{ asset('img/mainlogo.png') }}";
              } else {
                  navbar.classList.add('text-white');
+                 logo.src = "{{ asset('img/whiteLogo.png') }}";
              }
-
-
          })
      </script>
  </x-layout>

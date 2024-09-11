@@ -10,7 +10,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'moon': ['Moon Dance', ...defaultTheme.fontFamily.sans],
+        'main': ['Antic Didone', ...defaultTheme.fontFamily.sans],
         'montserrat': ['Montserrat Alternates', ...defaultTheme.fontFamily.sans]
       },
       colors: {

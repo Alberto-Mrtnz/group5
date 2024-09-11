@@ -29,7 +29,6 @@ Route::get('/home', function () {
     ]);
 });
 
-
 Route::get('/service/{service}', function (Supply $service) {
     return view('service', [
         'supply' => $service->load('user', 'ratings'),
@@ -40,7 +39,6 @@ Route::get('/userprofile', function (Supply $service) {
     return view('userprofile', [
         'user' => Auth::user(),
         'supply' => $service->load('user')
-
     ]);
 });
 

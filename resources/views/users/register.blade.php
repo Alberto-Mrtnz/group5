@@ -6,7 +6,7 @@
     </div>
 
     <div class="col-span-2">
-        <img src="{{ asset('img/eventi.png') }}" class="w-64 justify-items-center">
+        <img src="{{ asset('img/eventi.png') }}" class="w-64 mx-auto">
         <form action="/register" method="POST">
             @csrf
 

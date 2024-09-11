@@ -32,7 +32,7 @@
 
         <div x-data="{categoryFilter: 'none'}">
             <!-- categorias -->
-            <button  @click='{ categoryFilter: "hi"}'>d</button>
+            <button  @click='{ categoryFilter: "hi"}'></button>
             <div class="flex items-center justify-center">
                 @foreach ($categories as $category)
                     <x-buttonicon  >{{ $category->name }}</x-buttonicon>
@@ -49,7 +49,7 @@
             </div>
         </div>
     </div>
-    
+
     <script>
         document.addEventListener('alpine:init', () => {
             Alpine.data('dropdown', () => ({

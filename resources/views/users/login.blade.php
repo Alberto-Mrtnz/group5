@@ -6,7 +6,7 @@
         </div>
 
         <div class="col-span-2">
-            <img src="{{ asset('img/eventi.png') }}" class="w-64 mx-auto">
+            <img src="{{ asset('img/mainlogo.png') }}" class="w-64 mx-auto">
             <form action="/login" method="POST">
                 @csrf
 

@@ -2,25 +2,36 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\User;
 use Illuminate\Database\Seeder;
 use App\Models\Budget;
 
 class BudgetSeeder extends Seeder
 {
+    public function users()
+    {
+        return User::pluck('id');
+    }
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-        $budget = [
-            'name',
-            'total_price',
-            'date'
+        $users = $this->users();
+
+        $budgets = [
+            [
+                'name' => "Agatha's birthday party",
+                'total_price' => 123.00,
+                'user_id' => $users->random()
+            ],
+            [
+                'name' => "Juan's anniversary",
+                'total_price' => 123.00,
+                'user_id' => $users->random()
+            ],
         ];
 
-        Budget::factory(count($budget))->sequence(fn ($sqn) => ['name' => $budget[$sqn->index]])->create();
-
-        //Budget::factory(15)->create();
+        Budget::factory(count($budgets))->sequence(fn ($sqn) => $budgets[$sqn->index])->create();
     }
 }

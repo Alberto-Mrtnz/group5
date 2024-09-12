@@ -22,8 +22,8 @@ class DatabaseSeeder extends Seeder
             CategorySeeder::class,
             UserSeeder::class,
             ScheduleSeeder::class,
-            BudgetSeeder::class,
             SupplySeeder::class,
+            BudgetSeeder::class,
             BudgetItemSeeder::class,
             RatingSeeder::class,
         ]);
@@ -32,9 +32,5 @@ class DatabaseSeeder extends Seeder
           //  'name' => 'Test User',
             //'email' => 'test@example.com',
         //]);
-
-
-
-
     }
 }

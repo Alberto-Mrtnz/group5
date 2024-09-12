@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Budget;
 use App\Models\Category;
 use App\Models\Supply;
 use App\Models\User;
@@ -50,4 +51,16 @@ Route::get('/provider/{user}', function (User $user) {
 
 Route::get('/prueva', function () {
     return view('prueva');
+});
+
+Route::get('/budgets', function () {
+    return view('budgets', [
+        'budgets' => Auth::user()->budgets
+    ]);
+});
+
+Route::get('/budgets/{id}', function (Budget $budget) {
+    return view('budgetDetails', [
+        ''
+    ]);
 });

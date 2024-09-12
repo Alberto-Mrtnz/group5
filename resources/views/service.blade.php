@@ -10,7 +10,7 @@
                 <swiper-container class="flex items-center justify-center w-9/12 mx-20" effect="cards" grab-cursor="true"
                     pagination="true" grab-cursor="true" centered-slides="true" loop="true">
                     <swiper-slide class="bg-center">
-                        <img class="w-full h-80 mx-auto rounded-lg" src="{{ asset("img/supplies/$supply->id/$supply->id.1.jpg") }}">
+                        <img class="w-full mx-auto rounded-lg" src="{{ asset("img/supplies/$supply->id/$supply->id.1.jpg") }}">
                     </swiper-slide>
                     <swiper-slide class="bg-center ">
                         <img class="w-full h-80 mx-auto rounded-lg" src="{{ asset("img/supplies/$supply->id/$supply->id.2.jpg") }}">

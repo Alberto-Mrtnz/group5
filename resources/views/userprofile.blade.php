@@ -18,9 +18,11 @@
 
                     <p class="p-4 rounded-lg w-80 bg-fika-piel">{{ $user->email }}</p>
                     <p class="p-4 rounded-lg w-80 bg-fika-piel">{{ $user->phone }}</p>
-
                 </div>
-
             </div>
+        @foreach($tableros as $tablero)
+        {{ $tablero }}
+
+        @endforeach
     </div>
 </x-layout>

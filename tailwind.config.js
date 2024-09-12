@@ -10,8 +10,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'main': ['Antic Didone', ...defaultTheme.fontFamily.sans],
-        'montserrat': ['Montserrat Alternates', ...defaultTheme.fontFamily.sans]
+        'didone': ['Antic Didone', ...defaultTheme.fontFamily.sans],
+        'main': ['Playfair', ...defaultTheme.fontFamily.sans]
       },
       colors: {
         'eventi':{

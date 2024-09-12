@@ -6,7 +6,7 @@
     @vite('resources/css/app.css')
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
     <title>Eventi</title>
     <link rel="icon" type="image/x-icon" href="{{ asset("img/LogoE.png")}}">
 </head>

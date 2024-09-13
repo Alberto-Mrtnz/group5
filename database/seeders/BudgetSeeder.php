@@ -21,6 +21,16 @@ class BudgetSeeder extends Seeder
 
         $budgets = [
             [
+                'name' => "Lola's anniversary",
+                'total_price' => 193.00,
+                'user_id' => 1
+            ],
+            [
+                'name' => "Joseph's graduation party",
+                'total_price' => 103.00,
+                'user_id' => 1
+            ],
+            [
                 'name' => "Agatha's birthday party",
                 'total_price' => 123.00,
                 'user_id' => $users->random()

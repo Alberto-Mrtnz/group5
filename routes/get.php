@@ -39,28 +39,23 @@ Route::get('/service/{service}', function (Supply $service) {
 Route::get('/userprofile', function (Supply $service) {
     return view('userprofile', [
         'user' => Auth::user(),
-        'supply' => $service->load('user')
+        'supply' => $service->load('user'),
+        'tableros' => Auth::user()->budgets->load('budgetitem'),
     ]);
 });
 
 Route::get('/provider/{user}', function (User $user) {
     return view('providerprofile',[
-        'proveedor'=> $user
+        'proveedor'=> $user,
     ]);
 })->name('provider');
 
-Route::get('/prueva', function () {
-    return view('prueva');
-});
-
-Route::get('/budgets', function () {
-    return view('budgets', [
-        'budgets' => Auth::user()->budgets
-    ]);
-});
-
 Route::get('/budgets/{id}', function (Budget $budget) {
     return view('budgetDetails', [
-        ''
+        'tablero' => $budget->load('budgetitem', 'budgetitem.supply')
     ]);
+});
+
+Route::get('/prueva', function () {
+    return view('prueva');
 });

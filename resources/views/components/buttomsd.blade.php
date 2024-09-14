@@ -1,5 +1,5 @@
 
-<div class="text-right font-montserrat">
+<div class="text-right font-didone">
     <button class="italic">
     {{$slot}}
     </button>

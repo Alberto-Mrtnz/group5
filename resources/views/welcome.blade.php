@@ -73,7 +73,7 @@
              </div>
          </div>
 
-         <div id="ourServices" class="h-screen bg-">
+         <div id="ourServices" class="">
              <h1 class="py-10 text-2xl font-semibold text-center font-main">Our services</h1>
              <swiper-container class="flex items-center justify-center pb-10 mx-12" pagination="true" effect="coverflow"
                  grab-cursor="true" centered-slides="true" slides-per-view="auto" coverflow-effect-rotate="50"

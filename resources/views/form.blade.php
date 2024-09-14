@@ -10,12 +10,12 @@
             <div class="my-12 overflow-container">
 
                 <img src="{{ asset('img/mainLogo.png') }}" class="w-36 mx-auto">
-                <h1 class="my-8 text-2xl text-center font-semibold font-monserrat">Service Owners Questionnaire</h1>
+                <h1 class="my-8 text-2xl text-center font-semibold font-main">Service Owners Questionnaire</h1>
                 <form action="/login" method="POST">
                 @csrf
 
-                <label for="" class="block font-medium font-montserrat">Where is your business located?</label>
-                    <div class="italic pb-4">
+                <label for="" class="block font-medium font-main text-lg">Where is your business located?</label>
+                    <div class="font-didone italic pb-4">
                         <select name="local">
                             <option>Ahuachapán</option>
                             <option>Santa Ana</option>
@@ -34,9 +34,9 @@
                         </select>
                     </div>
 
-                <label for="" class="block font-medium font-montserrat">What kind of services do you provide?</label>
+                <label for="" class="block font-medium font-main text-lg">What kind of services do you provide?</label>
                     <div class="pb-4 space-y-2 italic">
-                        <input type="radio" name="celebration" value="weddings"><label for="">Weddings</label><br>
+                        <input type="radio" name="celebration" value="weddings"><label for="" class="text-didone">Weddings</label><br>
                         <input type="radio" name="celebration" value="corporate_parties"><label for="">Corporate parties</label><br>
                         <input type="radio" name="celebration" value="birthday"><label for="">Birthday</label><br>
                         <input type="radio" name="celebration" value="Baptisms"><label for="">Baptisms</label><br>
@@ -44,7 +44,7 @@
                         <x-input class="w-12" titulo="" type="text" name=""></x-input>
                     </div>
 
-                <label for="" class="block font-medium font-montserrat">What specific service do you offer?</label>
+                <label for="" class="block font-medium font-main text-lg">What specific service do you offer?</label>
                 <div class="pb-4 space-y-2 italic">
                     <input type="radio" name="service" value="veniu"><label for="">Veniu</label><br>
                         <input type="radio" name="service" value="decoration"><label for="">Decoration</label><br>
@@ -54,7 +54,7 @@
                         <input type="radio" name="service" value="animation"><label for="">Animation</label><br>
                     </div>
 
-                    <label for="" class="block font-medium font-montserrat">Include images or videos of the service you offer:</label><input type="file" id="image">
+                    <label for="" class="block font-medium font-main text-lg">Include images or videos of the service you offer:</label><input type="file" id="image">
                     <x-input titulo="Write the price of your services:" type="text" name="phone"></x-input>
                     <x-input titulo="Write a description of your service:" type="text" name="phone"></x-input>
                     <x-input titulo="Do you offer any service packages, promotions or special discounts that you would like to publicize?" type="text" name="phone" placeholder="Specify what it consists of"></x-input>

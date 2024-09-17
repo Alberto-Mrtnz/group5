@@ -8,7 +8,6 @@
 
         <div class="mx-40 col-span-2 max-h-screen">
             <div class="my-12 overflow-container">
-
                 <img src="{{ asset('img/mainLogo.png') }}" class="w-36 mx-auto">
                 <h1 class="my-8 text-2xl text-center font-semibold font-main">Service Owners Questionnaire</h1>
                 <form action="/login" method="POST">
@@ -46,15 +45,16 @@
 
                 <label for="" class="block font-medium font-main text-lg">What specific service do you offer?</label>
                 <div class="pb-4 space-y-2 italic">
-                    <input type="radio" name="service" value="veniu"><label for="">Veniu</label><br>
+                    <input type="radio" name="service" value="veniu"><label for="">Venue</label><br>
                         <input type="radio" name="service" value="decoration"><label for="">Decoration</label><br>
-                        <input type="radio" name="service" value="banquets"><label for="">Banquets</label><br>
+                        <input type="radio" name="service" value="banquets"><label for="">Feast</label><br>
                         <input type="radio" name="service" value="audiovisual_equipment"><label for="">Audiovisual equipment</label><br>
                         <input type="radio" name="service" value="furniture"><label for="">Furniture</label><br>
                         <input type="radio" name="service" value="animation"><label for="">Animation</label><br>
                     </div>
 
-                    <label for="" class="block font-medium font-main text-lg">Include images or videos of the service you offer:</label><input type="file" id="image">
+                    <label for="" class="block font-medium font-main text-lg">Include images or videos of the service you offer:</label>
+                    <input type="file" id="image">
                     <x-input titulo="Write the price of your services:" type="text" name="phone"></x-input>
                     <x-input titulo="Write a description of your service:" type="text" name="phone"></x-input>
                     <x-input titulo="Do you offer any service packages, promotions or special discounts that you would like to publicize?" type="text" name="phone" placeholder="Specify what it consists of"></x-input>

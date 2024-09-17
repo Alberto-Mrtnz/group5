@@ -9,7 +9,8 @@ use App\Models\BudgetItem;
 class Budget extends Model
 {
     use HasFactory;
-    public function budgetitem() {
-        return $this->belongsTo(BudgetItem::class);
+
+    public function budgetItems() {
+        return $this->hasMany(BudgetItem::class);
     }
 }

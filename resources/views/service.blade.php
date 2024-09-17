@@ -56,42 +56,42 @@
                     </div>
                 </div>
 
-                <div class="p-8 m-4 mt- rounded-lg bg-[#E5E7EB]">
-                    <h1 class="font-semibold">ADDRESS</h1>
-                    <p>{{ $supply->address }}</p>
+                <div class="p-8 m-4 mt- rounded-lg bg-eventi-gris">
+                    <h1 class="font-main text-lg font-semibold">ADDRESS</h1>
+                    <p class="font-didone text-lg">{{ $supply->address }}</p>
                 </div>
             </div>
 
             <div class="w-full rounded-lg pr-9">
-                <div class="p-8 mb-4 rounded-lg mt-7 bg-slate-300">
+                <div class="p-8 mb-4 rounded-lg mt-7 bg-eventi-gris">
                     <a href='{{ route('provider', $supply->user->id) }}'
-                        class="ml-6 text-2xl mt-">{{ $supply->user->name }}</a>
+                        class="ml-6 text-3xl font-main">{{ $supply->user->name }}</a>
                 </div>
-                <div class="m bg-slate-300 rounded-lg m-0.5 p-20">
+                <div class="bg-eventi-gris rounded-lg m-0.5 p-20">
                     <div class="mb-3">
-                        <p class="mb-3 font-bold">{{ $supply->name }}</p>
-                        <h1 class="font-semibold">DESCRIPTION</h1>
-                        <p>{{ $supply->description }}</p>
+                        <p class="mb-3 font-main text-xl font-bold">{{ $supply->name }}</p>
+                        <h1 class="font-main text-lg font-semibold">DESCRIPTION</h1>
+                        <p class="font-didone text-lg">{{ $supply->description }}</p>
                     </div>
                 </div>
-                <div class="m bg-slate-300 rounded-lg m-0.5 p-12 mt-4">
+                <div class="bg-eventi-gris rounded-lg m-0.5 p-12 mt-4">
                     <p>
-                    <h1 class="font-semibold">EXPERIENCE</h1>
-                    {{ $supply->experience }}
+                    <h1 class="font-main text-lg font-semibold">EXPERIENCE</h1>
+                    <p class="font-didone text-lg">{{ $supply->experience }}</p>
                     </p>
                 </div>
             </div>
         </div>
 
         <div class="grid grid-cols-2 mx-4">
-            <div class="col-span-1 bg-gray-200 p-2">
-                <h1 class="py-1.5">JUAN PABLO ll</h1>
-                <div class="flex space-x-2">
-                    <img class="w-10 h-10 rounded-full" src="{{ asset('img/persona2.jpg') }}">
+            <div class="col-span-1 bg-eventi-gris p-2">
+                <h1 class="py-1.5 ml-2 font-main">JUAN PABLO ll</h1>
+                <div class="flex space-x-2 font-didone">
+                    <img class="w-10 h-10 rounded-full mr-4" src="{{ asset('img/icon.png') }}">
                         @foreach( $supply->ratings as $rating )
                             {{ $rating->comment }}
                         @endforeach
-                </div>x
+                </div>
                 <div class="">
                     <div x-data="{
                         rating: 0,

@@ -21,11 +21,13 @@
                 </div>
                 <div x-show="opened"
                     class="fixed left-0 z-20 flex flex-col items-center justify-start h-screen pt-5 bg-white w-96 top-16">
-                    <div class="w-full ml-6">
+                    <div class="w-full flex justify-center items-center">
+                    <a href="/">
                         <button
-                            class="p-2 py-8 mt-2 text-2xl font-medium text-center text-black rounded-lg bg-fika-piel px-14 font-montserrat hover:bg-[#fb825a]">
-                            <p>Enabled services</p>
+                            class="border-2 border-eventi-gris w-80 px-12 py-8 mt-2 text-2xl font-medium text-center text-black rounded-lg bg-fika-piel font-main hover:bg-eventi-gris">
+                            <p>Welcome</p>
                         </button>
+                    </a>
                     </div>
 
                     <div class="w-full ml-6">
@@ -35,11 +37,19 @@
                         </button>-->
                     </div>
 
-                    <div class="w-full ml-6">
+                    <div class="w-full flex justify-center items-center">
                         <a href="/home">
                             <button
-                                class="p-2 py-8 mt-4 text-2xl font-medium text-center text-black rounded-lg bg-fika-piel px-36 font-montserrat hover:bg-[#e9c6ca]">
-                                <p>Inicio</p>
+                                class="border-2 border-eventi-gris w-80 px-12 py-8 mt-2 text-2xl font-medium text-center text-black rounded-lg bg-fika-piel font-main hover:bg-eventi-gris">
+                                <p>Services</p>
+                            </button>
+                        </a>
+                    </div>
+                    <div class="w-full flex justify-center items-center">
+                        <a href="/userprofile">
+                            <button
+                                class="border-2 border-eventi-gris w-80 px-12 py-8 mt-2 text-2xl font-medium text-center text-black rounded-lg bg-fika-piel font-main hover:bg-eventi-gris">
+                                <p>Profile</p>
                             </button>
                         </a>
                     </div>

@@ -1,24 +1,23 @@
 <x-layout>
     <div>
-        <div x-data="{opened: false}" >
-               <x-barra></x-barra>
+        <div x-data="{ opened: false }">
+            <x-barra></x-barra>
 
-        <div class="grid grid-cols-2 m-2 border-2x place-items-center">
-            <div class="grid py-16 cols-start-2">
-                <div class="pl-8"> <img class="w-64 rounded-full mb-" src="{{ asset('img/icon.png') }}"></div>
-
-
-                    <p class="p-4 rounded-lg w-80 bg-fika-piel">{{ $proveedor->name }}</p>
-                    <p class="p-4 rounded-lg w-80 bg-fika-piel">{{ $proveedor->email }}</p>
-                    <p class="p-4 rounded-lg w-80 bg-fika-piel">{{ $proveedor->phone }}</p>
-                    <p class="p-4 rounded-lg w-80 bg-fika-piel">{{ $proveedor->birthday }}</p>
-                    <p class="p-4 rounded-lg w-80 bg-fika-piel">{{ $proveedor->description }}</p>
+            <div>
+                <div class="flex justify-center">
+                    <img class="w-48 ml-8 mt-8 mr-8 mb-4 rounded-full" src="{{ asset('img/icon.png') }}">
                 </div>
-
+                <div class="text-center justify-center">
+                    <h1 class="font-main font-extrabold text-4xl">Personal information</h1>
+                </div>
+                <div class="text-center font-didone">
+                    <p class="p-2">{{ $proveedor->name }}</p>
+                    <p class="p-2">{{ $proveedor->email }}</p>
+                    <p class="p-2">{{ $proveedor->phone }}</p>
+                    <p class="p-2">{{ $proveedor->birthday }}</p>
+                    <p class="p-2">{{ $proveedor->description }}</p>
+                </div>
             </div>
-
-
-
 
         </div>
     </div>

@@ -40,7 +40,7 @@ class SupplySeeder extends Seeder
                 'experience' => 'Used in over 200 events for guests\' seating.',
                 'img' => 'CHAIR/banquet-chair.jpg',
                 'user_id' => $users->random(),
-                'category_id' => Category::where('name', 'Mobiliario')->first()->id,
+                'category_id' => Category::where('name', 'Furniture')->first()->id,
                 'schedule_id' => $schedules->random(),
             ],
             [
@@ -53,7 +53,7 @@ class SupplySeeder extends Seeder
                 'experience' => 'Used in over 200 events for guests\' seating.',
                 'img' => 'CHAIR/goal-chairs.jpg',
                 'user_id' => $users->random(),
-                'category_id' => Category::where('name', 'Mobiliario')->first()->id,
+                'category_id' => Category::where('name', 'Furniture')->first()->id,
                 'schedule_id' => $schedules->random(),
             ],
             [
@@ -66,7 +66,7 @@ class SupplySeeder extends Seeder
                 'experience' => 'Used in over 200 events for guests\' seating.',
                 'img' => 'CHAIR/wooden-chairs.jpg',
                 'user_id' => $users->random(),
-                'category_id' => Category::where('name', 'Mobiliario')->first()->id,
+                'category_id' => Category::where('name', 'Furniture')->first()->id,
                 'schedule_id' => $schedules->random(),
             ],
             [
@@ -79,7 +79,7 @@ class SupplySeeder extends Seeder
                 'experience' => 'Used in over 200 events for guests\' seating.',
                 'img' => 'CHAIR/cube-armchairs.jpg',
                 'user_id' => $users->random(),
-                'category_id' => Category::where('name', 'Mobiliario')->first()->id,
+                'category_id' => Category::where('name', 'Furniture')->first()->id,
                 'schedule_id' => $schedules->random(),
             ],
             [
@@ -92,7 +92,7 @@ class SupplySeeder extends Seeder
                 'experience' => 'Used in over 200 events for guests\' seating.',
                 'img' => 'CHAIR/classic-chairs.jpg',
                 'user_id' => $users->random(),
-                'category_id' => Category::where('name', 'Mobiliario')->first()->id,
+                'category_id' => Category::where('name', 'Furniture')->first()->id,
                 'schedule_id' => $schedules->random(),
             ],
             [
@@ -105,7 +105,7 @@ class SupplySeeder extends Seeder
                 'experience' => 'Popular choice for weddings and large gatherings.',
                 'img' => 'TABLE/round-tables.jpg',
                 'user_id' => $users->random(),
-                'category_id' => Category::where('name', 'Mobiliario')->first()->id,
+                'category_id' => Category::where('name', 'Furniture')->first()->id,
                 'schedule_id' => $schedules->random(),
             ],
             [
@@ -118,7 +118,7 @@ class SupplySeeder extends Seeder
                 'experience' => 'Popular choice for weddings and large gatherings.',
                 'img' => 'TABLE/square-tables.jpg',
                 'user_id' => $users->random(),
-                'category_id' => Category::where('name', 'Mobiliario')->first()->id,
+                'category_id' => Category::where('name', 'Furniture')->first()->id,
                 'schedule_id' => $schedules->random(),
             ],
             [
@@ -131,7 +131,7 @@ class SupplySeeder extends Seeder
                 'experience' => 'Popular choice for weddings and large gatherings.',
                 'img' => 'TABLE/terrace-table.jpg',
                 'user_id' => $users->random(),
-                'category_id' => Category::where('name', 'Mobiliario')->first()->id,
+                'category_id' => Category::where('name', 'Furniture')->first()->id,
                 'schedule_id' => $schedules->random(),
             ],
             [
@@ -144,7 +144,7 @@ class SupplySeeder extends Seeder
                 'experience' => 'Popular choice for weddings and large gatherings.',
                 'img' => 'TABLE/U-shaped-table.jpg',
                 'user_id' => $users->random(),
-                'category_id' => Category::where('name', 'Mobiliario')->first()->id,
+                'category_id' => Category::where('name', 'Furniture')->first()->id,
                 'schedule_id' => $schedules->random(),
             ],
             [
@@ -157,7 +157,7 @@ class SupplySeeder extends Seeder
                 'experience' => 'Popular choice for weddings and large gatherings.',
                 'img' => 'TABLE/oval-tables.jpg',
                 'user_id' => $users->random(),
-                'category_id' => Category::where('name', 'Mobiliario')->first()->id,
+                'category_id' => Category::where('name', 'Furniture')->first()->id,
                 'schedule_id' => $schedules->random(),
             ],
             [
@@ -170,7 +170,7 @@ class SupplySeeder extends Seeder
                 'experience' => 'Used in concerts and corporate events for better visibility.',
                 'img' => 'STAGE/stage-plantform.webp',
                 'user_id' => $users->random(),
-                'category_id' => Category::where('name', 'Aparatos Audiovisuales')->first()->id,
+                'category_id' => Category::where('name', 'Audiovisual equipment')->first()->id,
                 'schedule_id' => $schedules->random(),
             ],
             [
@@ -183,7 +183,7 @@ class SupplySeeder extends Seeder
                 'experience' => 'Provides atmospheric lighting for parties and performances.',
                 'img' => 'LIGHT/color-lights.jpg',
                 'user_id' => $users->random(),
-                'category_id' => Category::where('name', 'Aparatos Audiovisuales')->first()->id,
+                'category_id' => Category::where('name', 'Audiovisual equipment')->first()->id,
                 'schedule_id' => $schedules->random(),
             ],
             [
@@ -196,7 +196,7 @@ class SupplySeeder extends Seeder
                 'experience' => 'Provides atmospheric lighting for parties and performances.',
                 'img' => 'LIGHT/laser-lights.jpg',
                 'user_id' => $users->random(),
-                'category_id' => Category::where('name', 'Aparatos Audiovisuales')->first()->id,
+                'category_id' => Category::where('name', 'Audiovisual equipment')->first()->id,
                 'schedule_id' => $schedules->random(),
             ],
             [
@@ -209,7 +209,7 @@ class SupplySeeder extends Seeder
                 'experience' => 'Adds beauty and elegance to any event.',
                 'img' => 'ARRENGEMENT/professional-photographer.jpg',
                 'user_id' => $users->random(),
-                'category_id' => Category::where('name', 'Decoración')->first()->id,
+                'category_id' => Category::where('name', 'Decoration')->first()->id,
                 'schedule_id' => $schedules->random(),
             ],
             [
@@ -222,7 +222,7 @@ class SupplySeeder extends Seeder
                 'experience' => 'Used by professional caterers.',
                 'img' => 'CATERI-E/desserts-catering.jpg',
                 'user_id' => $users->random(),
-                'category_id' => Category::where('name', 'Equipamiento')->first(),
+                'category_id' => Category::where('name', 'Catering')->first(),
             ],
             [
                 'name' => 'Plastic Catering',
@@ -234,7 +234,7 @@ class SupplySeeder extends Seeder
                 'experience' => 'Used by professional caterers.',
                 'img' => 'CATERI-E/plastic-catering.jpg',
                 'user_id' => $users->random(),
-                'category_id' => Category::where('name', 'Equipamiento')->first(),
+                'category_id' => Category::where('name', 'Catering')->first(),
                 'schedule_id' => $schedules->random(),
                 'category_id' => 1,
             ],
@@ -248,7 +248,7 @@ class SupplySeeder extends Seeder
                 'experience' => 'Used by professional caterers.',
                 'img' => 'CATERI-E/small-catering.jpg',
                 'user_id' => $users->random(),
-                'category_id' => Category::where('name', 'Equipamiento')->first(),
+                'category_id' => Category::where('name', 'Catering')->first(),
                 'schedule_id' => $schedules->random(),
                 'category_id' => 1,
             ],
@@ -262,7 +262,7 @@ class SupplySeeder extends Seeder
                 'experience' => 'Provides atmospheric lighting for parties and performances.',
                 'img' => 'LIGHT/waterfall-lights.webp',
                 'user_id' => $users->random(),
-                'category_id' => Category::where('name', 'Aparatos Audiovisuales')->first()->id,
+                'category_id' => Category::where('name', 'Audiovisual equipment')->first()->id,
                 'schedule_id' => $schedules->random(),
             ],
             [
@@ -275,7 +275,7 @@ class SupplySeeder extends Seeder
                 'experience' => 'Adds beauty and elegance to any event.',
                 'img' => 'ARRENGEMENT/professional-florist.jpg',
                 'user_id' => $users->random(),
-                'category_id' => Category::where('name', 'Decoración')->first()->id,
+                'category_id' => Category::where('name', 'Decoration')->first()->id,
                 'schedule_id' => $schedules->random(),
             ],
             [
@@ -288,7 +288,7 @@ class SupplySeeder extends Seeder
                 'experience' => 'Provides atmospheric lighting for parties and performances.',
                 'img' => 'LIGHT/light-system.webp',
                 'user_id' => $users->random(),
-                'category_id' => Category::where('name', 'Aparatos Audiovisuales')->first()->id,
+                'category_id' => Category::where('name', 'Audiovisual equipment')->first()->id,
                 'schedule_id' => $schedules->random(),
             ],
             [
@@ -301,7 +301,7 @@ class SupplySeeder extends Seeder
                 'experience' => 'Ensures excellent sound quality for speeches, music, and presentations.',
                 'img' => 'SOUND/sound-system.webp',
                 'user_id' => $users->random(),
-                'category_id' => Category::where('name', 'Aparatos Audiovisuales')->first()->id,
+                'category_id' => Category::where('name', 'Audiovisual equipment')->first()->id,
                 'schedule_id' => $schedules->random(),
             ],
             [
@@ -314,7 +314,7 @@ class SupplySeeder extends Seeder
                 'experience' => 'Served over 500 events with gourmet food options.',
                 'img' => 'CATERI-S/catering-service.jpg',
                 'user_id' => $users->random(),
-                'category_id' => Category::where('name', 'Servicios')->first(),
+                'category_id' => Category::where('name', 'Catering')->first(),
                 'schedule_id' => $schedules->random(),
             ],
             [
@@ -327,7 +327,7 @@ class SupplySeeder extends Seeder
                 'experience' => 'Served over 500 events with gourmet food options.',
                 'img' => 'CATERI-S/small-celebration.jpg',
                 'user_id' => $users->random(),
-                'category_id' => Category::where('name', 'Servicios')->first(),
+                'category_id' => Category::where('name', 'Catering')->first(),
                 'schedule_id' => $schedules->random(),
             ],
             [
@@ -340,7 +340,7 @@ class SupplySeeder extends Seeder
                 'experience' => 'Served over 500 events with gourmet food options.',
                 'img' => 'CATERI-S/buffet-chef.jpg',
                 'user_id' => $users->random(),
-                'category_id' => Category::where('name', 'Servicios')->first(),
+                'category_id' => Category::where('name', 'Catering')->first(),
                 'schedule_id' => $schedules->random(),
             ],
             [ 'name' => 'Saucier Chef',
@@ -352,7 +352,7 @@ class SupplySeeder extends Seeder
             'experience' => 'Served over 500 events with gourmet food options.',
             'img' => 'CATERI-S/chef-saucier.jpg',
             'user_id' => $users->random(),
-            'category_id' => Category::where('name', 'Servicios')->first(),
+            'category_id' => Category::where('name', 'Catering')->first(),
             'schedule_id' => $schedules->random(),
             ],
             [
@@ -365,7 +365,7 @@ class SupplySeeder extends Seeder
                 'experience' => 'Ensures excellent sound quality for speeches, music, and presentations.',
                 'img' => 'SOUND/large-speaker.jpg',
                 'user_id' => $users->random(),
-                'category_id' => Category::where('name', 'Aparatos Audiovisuales')->first()->id,
+                'category_id' => Category::where('name', 'Audiovisual equipment')->first()->id,
                 'schedule_id' => $schedules->random(),
             ],
             [
@@ -378,7 +378,7 @@ class SupplySeeder extends Seeder
                 'experience' => 'Ensures excellent sound quality for speeches, music, and presentations.',
                 'img' => 'SOUND/medium-speaker.jpg',
                 'user_id' => $users->random(),
-                'category_id' => Category::where('name', 'Aparatos Audiovisuales')->first()->id,
+                'category_id' => Category::where('name', 'Audiovisual equipment')->first()->id,
                 'schedule_id' => $schedules->random(),
             ],
             [
@@ -391,7 +391,7 @@ class SupplySeeder extends Seeder
                 'experience' => 'Ensures excellent sound quality for speeches, music, and presentations.',
                 'img' => 'SOUND/small-speaker.jpg',
                 'user_id' => $users->random(),
-                'category_id' => Category::where('name', 'Aparatos Audiovisuales')->first()->id,
+                'category_id' => Category::where('name', 'Audiovisual equipment')->first()->id,
                 'schedule_id' => $schedules->random(),
             ],
             [
@@ -404,7 +404,7 @@ class SupplySeeder extends Seeder
                 'experience' => 'Over 300 events with a diverse music collection.',
                 'img' => 'DJ/dj-service.jpg',
                 'user_id' => $users->random(),
-                'category_id' => Category::where('name', 'Servicios')->first(),
+                'category_id' => Category::where('name', 'Services')->first(),
                 'schedule_id' => $schedules->random(),
             ],
             [
@@ -417,7 +417,7 @@ class SupplySeeder extends Seeder
                 'experience' => 'Creates a magical atmosphere at events.',
                 'img' => 'DECORATE/decorative-lights.jpg',
                 'user_id' => $users->random(),
-                'category_id' => Category::where('name', 'Aparatos Audiovisuales')->first()->id,
+                'category_id' => Category::where('name', 'Audiovisual equipment')->first()->id,
                 'schedule_id' => $schedules->random(),
             ],
 
@@ -431,7 +431,7 @@ class SupplySeeder extends Seeder
                 'experience' => 'Used in various conferences and movie nights.',
                 'img' => 'PROJECTOR/projector.webp',
                 'user_id' => $users->random(),
-                'category_id' => Category::where('name', 'Aparatos Audiovisuales')->first()->id,
+                'category_id' => Category::where('name', 'Audiovisual equipment')->first()->id,
                 'schedule_id' => $schedules->random(),
             ],
             [
@@ -444,7 +444,7 @@ class SupplySeeder extends Seeder
                 'experience' => 'Perfect for weddings and parties.',
                 'img' => 'FLOOR/dance-floor.jpg',
                 'user_id' => $users->random(),
-                'category_id' => Category::where('name', 'Mobiliario')->first()->id,
+                'category_id' => Category::where('name', 'Furniture')->first()->id,
                 'schedule_id' => $schedules->random(),
             ],
             [
@@ -457,7 +457,7 @@ class SupplySeeder extends Seeder
                 'experience' => 'Used by professional caterers.',
                 'img' => 'CATERI-E/complete-catering.jpg',
                 'user_id' => $users->random(),
-                'category_id' => Category::where('name', 'Equipamiento')->first(),
+                'category_id' => Category::where('name', 'Catering')->first(),
                 'schedule_id' => $schedules->random(),
                 'category_id' => 1,
             ],
@@ -471,7 +471,7 @@ class SupplySeeder extends Seeder
                 'experience' => 'Captures unforgettable moments at events.',
                 'img' => 'PHOTO/photo-booth.jpg',
                 'user_id' => $users->random(),
-                'category_id' => Category::where('name', 'Servicios')->first()->id,
+                'category_id' => Category::where('name', 'Furniture')->first()->id,
                 'schedule_id' => $schedules->random(),
             ],
             /**[

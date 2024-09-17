@@ -83,10 +83,9 @@
                          src="{{ asset('img/Home.jpeg') }}"></swiper-slide>
                  <swiper-slide class="w-3/5"><img class="mx-auto"
                          src="{{ asset('img/salones-para-eventos.png') }}"></swiper-slide>
-                 <swiper-slide class="w-3/5"><img src="{{ asset('img/Home.jpeg') }}"></swiper-slide>
-                 <swiper-slide class="w-3/5"><img src="{{ asset('img/salones-para-eventos.png') }}"></swiper-slide>
-                 <swiper-slide class="w-3/5"><img src="{{ asset('img/Home.jpeg') }}"></swiper-slide>
-                 <swiper-slide class="w-3/5"><img src="{{ asset('img/salones-para-eventos.png') }}"></swiper-slide>
+                 <swiper-slide class="w-3/5"><img src="{{ asset('img/catering.jpg') }}"></swiper-slide>
+                 <swiper-slide class="w-3/5"><img src="{{ asset('img/local.jpg') }}"></swiper-slide>
+                 <swiper-slide class="w-3/5"><img src="{{ asset('img/flower.jpg') }}"></swiper-slide>
              </swiper-container>
          </div>
 

@@ -474,7 +474,7 @@ class SupplySeeder extends Seeder
                 'category_id' => Category::where('name', 'Servicios')->first()->id,
                 'schedule_id' => $schedules->random(),
             ],
-            [
+            /**[
                 'name' => 'Flower Arrangement',
                 'quantity' => 100,
                 'price' => 80,
@@ -486,7 +486,7 @@ class SupplySeeder extends Seeder
                 'user_id' => $users->random(),
                 'category_id' => Category::where('name', 'Decoración')->first()->id,
                 'schedule_id' => $schedules->random(),
-            ],
+            ],*/
             [
                 'name' => 'Catering Equipment',
                 'quantity' => 30,

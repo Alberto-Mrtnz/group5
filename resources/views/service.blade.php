@@ -85,7 +85,7 @@
 
         <div class="grid grid-cols-2 mx-4">
             <div class="col-span-1 bg-eventi-gris p-2">
-                <h1 class="py-1.5 ml-2 font-main">JUAN PABLO ll</h1>
+                <h1 class="py-1.5 ml-2 font-main">Carlos Antonio</h1>
                 <div class="flex space-x-2 font-didone">
                     <img class="w-10 h-10 rounded-full mr-4" src="{{ asset('img/icon.png') }}">
                         @foreach( $supply->ratings as $rating )

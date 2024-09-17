@@ -14,13 +14,12 @@ class CategorySeeder extends Seeder
     public function run(): void
     {
         $category = [
-            'Veniu',
+            'Venue',
             'Decoration',
             'Catering',
             'Audiovisual equipment',
             'Furniture',
-            'Animation',
-            'Services'
+            'Services',
         ];
 
         Category::factory(count($category))->sequence(fn ($sqn) => ['name' => $category[$sqn->index]])->create();

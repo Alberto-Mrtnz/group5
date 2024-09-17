@@ -513,7 +513,7 @@ class SupplySeeder extends Seeder
                 'experience' => 'Ensures safety and security at events.',
                 'img' => 'SECURITY-S/security.jpg',
                 'user_id' => $users->random(),
-                'category_id' => Category::where('name', 'Servicios')->first()->id,
+                'category_id' => Category::where('name', 'Services')->first()->id,
                 'schedule_id' => $schedules->random(),
             ],
         ];

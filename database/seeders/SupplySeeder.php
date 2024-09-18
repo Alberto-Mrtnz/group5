@@ -71,7 +71,7 @@ class SupplySeeder extends Seeder
             ],
             [
                 'name' => 'Cube chairs',
-                'quantity' => 20,
+                'quantity' => 45,
                 'price' => 45,
                 'description' => 'Comfortable and elegant banquet chair with cushioned seat.',
                 'is_service' => false,
@@ -97,7 +97,7 @@ class SupplySeeder extends Seeder
             ],
             [
                 'name' => 'Round Tables',
-                'quantity' => 20,
+                'quantity' => 40,
                 'price' => 120,
                 'description' => 'Sturdy round table that seats up to 10 people.',
                 'is_service' => false,
@@ -110,7 +110,7 @@ class SupplySeeder extends Seeder
             ],
             [
                 'name' => 'Square Tables',
-                'quantity' => 20,
+                'quantity' => 35,
                 'price' => 120,
                 'description' => 'Sturdy round table that seats up to 10 people.',
                 'is_service' => false,
@@ -123,7 +123,7 @@ class SupplySeeder extends Seeder
             ],
             [
                 'name' => 'Terrace Tables',
-                'quantity' => 20,
+                'quantity' => 23,
                 'price' => 120,
                 'description' => 'Sturdy round table that seats up to 10 people.',
                 'is_service' => false,
@@ -149,7 +149,7 @@ class SupplySeeder extends Seeder
             ],
             [
                 'name' => 'Oval Table',
-                'quantity' => 20,
+                'quantity' => 55,
                 'price' => 120,
                 'description' => 'Sturdy round table that seats up to 10 people.',
                 'is_service' => false,
@@ -175,7 +175,7 @@ class SupplySeeder extends Seeder
             ],
             [
                 'name' => 'Color Lights ',
-                'quantity' => null,
+                'quantity' => 50,
                 'price' => 1500,
                 'description' => 'Professional lighting system for events.',
                 'is_service' => false,
@@ -188,7 +188,7 @@ class SupplySeeder extends Seeder
             ],
             [
                 'name' => 'Laser Lightings',
-                'quantity' => null,
+                'quantity' => 700,
                 'price' => 1500,
                 'description' => 'Professional lighting system for events.',
                 'is_service' => false,
@@ -201,7 +201,7 @@ class SupplySeeder extends Seeder
             ],
             [
                 'name' => 'Proffesional Photographer',
-                'quantity' => 100,
+                'quantity' => null,
                 'price' => 80,
                 'description' => 'Elegant flower arrangements for decor.',
                 'is_service' => false,
@@ -226,7 +226,7 @@ class SupplySeeder extends Seeder
             ],
             [
                 'name' => 'Plastic Catering',
-                'quantity' => 30,
+                'quantity' => 20,
                 'price' => 200,
                 'description' => 'Essential equipment for catering services.',
                 'is_service' => false,
@@ -240,7 +240,7 @@ class SupplySeeder extends Seeder
             ],
             [
                 'name' => 'Small Catering',
-                'quantity' => 30,
+                'quantity' => 15,
                 'price' => 200,
                 'description' => 'Essential equipment for catering services.',
                 'is_service' => false,
@@ -254,7 +254,7 @@ class SupplySeeder extends Seeder
             ],
             [
                 'name' => 'Waterfall Lighting',
-                'quantity' => null,
+                'quantity' => 500,
                 'price' => 1500,
                 'description' => 'Professional lighting system for events.',
                 'is_service' => false,
@@ -267,7 +267,7 @@ class SupplySeeder extends Seeder
             ],
             [
                 'name' => 'Professional Florist',
-                'quantity' => 100,
+                'quantity' => null,
                 'price' => 80,
                 'description' => 'Elegant flower arrangements for decor.',
                 'is_service' => false,
@@ -280,7 +280,7 @@ class SupplySeeder extends Seeder
             ],
             [
                 'name' => 'Lighting System',
-                'quantity' => null,
+                'quantity' => 25,
                 'price' => 1500,
                 'description' => 'Professional lighting system for events.',
                 'is_service' => false,
@@ -293,7 +293,7 @@ class SupplySeeder extends Seeder
             ],
             [
                 'name' => 'Sound System',
-                'quantity' => null,
+                'quantity' => 8,
                 'price' => 2000,
                 'description' => 'High-quality sound system for clear audio at events.',
                 'is_service' => true,
@@ -319,7 +319,7 @@ class SupplySeeder extends Seeder
             ],
             [
                 'name' => 'Small Catering Service',
-                'quantity' => null,
+                'quantity' => 35,
                 'price' => 3000,
                 'description' => 'Full catering service for events.',
                 'is_service' => true,
@@ -357,7 +357,7 @@ class SupplySeeder extends Seeder
             ],
             [
                 'name' => 'large Speaker',
-                'quantity' => null,
+                'quantity' => 4,
                 'price' => 2000,
                 'description' => 'High-quality sound system for clear audio at events.',
                 'is_service' => true,
@@ -370,7 +370,7 @@ class SupplySeeder extends Seeder
             ],
             [
                 'name' => 'Medium Speaker',
-                'quantity' => null,
+                'quantity' => 7,
                 'price' => 2000,
                 'description' => 'High-quality sound system for clear audio at events.',
                 'is_service' => true,
@@ -383,7 +383,7 @@ class SupplySeeder extends Seeder
             ],
             [
                 'name' => 'Small Speaker',
-                'quantity' => null,
+                'quantity' => 5,
                 'price' => 2000,
                 'description' => 'High-quality sound system for clear audio at events.',
                 'is_service' => true,
@@ -474,7 +474,7 @@ class SupplySeeder extends Seeder
                 'category_id' => Category::where('name', 'Furniture')->first()->id,
                 'schedule_id' => $schedules->random(),
             ],
-            /**[
+            [
                 'name' => 'Flower Arrangement',
                 'quantity' => 100,
                 'price' => 80,
@@ -484,9 +484,9 @@ class SupplySeeder extends Seeder
                 'experience' => 'Adds beauty and elegance to any event.',
                 'img' => 'ARRENGEMENT/flower-arrangement.jpg',
                 'user_id' => $users->random(),
-                'category_id' => Category::where('name', 'Decoración')->first()->id,
+                'category_id' => Category::where('name', 'Decoration')->first()->id,
                 'schedule_id' => $schedules->random(),
-            ],*/
+            ],
             [
                 'name' => 'Catering Equipment',
                 'quantity' => 30,
@@ -497,7 +497,7 @@ class SupplySeeder extends Seeder
                 'experience' => 'Used by professional caterers.',
                 'img' => 'CATERI-E/catering-equipment.jpg',
                 'user_id' => $users->random(),
-                //'category_id' => Category::where('name', 'Equipamiento')->first(),
+                'category_id' => Category::where('name', 'Equipamiento')->first(),
                 'schedule_id' => $schedules->random(),
                 'category_id' => 1,
             ],

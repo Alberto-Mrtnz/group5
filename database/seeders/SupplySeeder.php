@@ -236,7 +236,6 @@ class SupplySeeder extends Seeder
                 'user_id' => $users->random(),
                 'category_id' => Category::where('name', 'Catering')->first(),
                 'schedule_id' => $schedules->random(),
-                'category_id' => 1,
             ],
             [
                 'name' => 'Small Catering',
@@ -250,7 +249,6 @@ class SupplySeeder extends Seeder
                 'user_id' => $users->random(),
                 'category_id' => Category::where('name', 'Catering')->first(),
                 'schedule_id' => $schedules->random(),
-                'category_id' => 1,
             ],
             [
                 'name' => 'Waterfall Lighting',
@@ -459,7 +457,6 @@ class SupplySeeder extends Seeder
                 'user_id' => $users->random(),
                 'category_id' => Category::where('name', 'Catering')->first(),
                 'schedule_id' => $schedules->random(),
-                'category_id' => 1,
             ],
             [
                 'name' => 'Photo Booth',
@@ -499,7 +496,6 @@ class SupplySeeder extends Seeder
                 'user_id' => $users->random(),
                 'category_id' => Category::where('name', 'Catering')->first(),
                 'schedule_id' => $schedules->random(),
-                'category_id' => 1,
             ],
 
             //$supplies->save(),

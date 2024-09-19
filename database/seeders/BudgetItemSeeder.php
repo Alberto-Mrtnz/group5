@@ -17,15 +17,63 @@ class BudgetItemSeeder extends Seeder
             [
                 'price' => 100,
                 'quantity' => 10,
-                'budget_id' => 1, 
-                'supply_id' => 1, 
+                'budget_id' => 1,
+                'supply_id' => 1,
             ],
             [
-                'price' => 200,
+                'price' => 100,
                 'quantity' => 20,
-                'budget_id' => 2, 
-                'supply_id' => 2, 
-            ]
+                'budget_id' => 1,
+                'supply_id' => 31,
+            ],
+            [
+                'price' => 100,
+                'quantity' => 20,
+                'budget_id' => 1,
+                'supply_id' => 35,
+            ],
+            [
+                'price' => 100,
+                'quantity' => 20,
+                'budget_id' => 1,
+                'supply_id' => 47,
+            ],
+            [
+                'price' => 100,
+                'quantity' => 20,
+                'budget_id' => 1,
+                'supply_id' => 32,
+            ],
+            [
+                'price' => 100,
+                'quantity' => 20,
+                'budget_id' => 2,
+                'supply_id' => 32,
+            ],
+            [
+                'price' => 100,
+                'quantity' => 20,
+                'budget_id' => 2,
+                'supply_id' => 32,
+            ],
+            [
+                'price' => 100,
+                'quantity' => 20,
+                'budget_id' => 2,
+                'supply_id' => 32,
+            ],
+            [
+                'price' => 100,
+                'quantity' => 20,
+                'budget_id' => 2,
+                'supply_id' => 32,
+            ],
+            [
+                'price' => 100,
+                'quantity' => 20,
+                'budget_id' => 2,
+                'supply_id' => 32,
+            ],
         ];
 
             BudgetItem::factory(count($budget))->sequence(fn ($sqn) => $budget[$sqn->index])->create();

@@ -5,9 +5,9 @@
     <h1 class="mx-6 font-didone font-bold text-2xl mt-12 mb-1 text-center">{{ $tablero->name }}</h1>
     <p class="text-gray-600 text-center mb-4">{{ $tablero->date }}</p>
 
+    <div class="grid grid-cols-3 gap-3 mb-12">
     @foreach($tablero->budgetItems as $item)
         <!-- tarjeta -->
-        <div class="grid grid-cols-3 gap-3 mb-12">
                 <a href="/service/{{$item->supply->id}}">
                     <div class="pt-6 pr-6 pl-9">
                         <div class="max-w-sm overflow-hidden transition duration-300 ease-in-out delay-150 rounded-lg shadow-lg bg-gray-200 hover:-translate-y-1 hover:scale-1">
@@ -22,6 +22,6 @@
                         </div>
                     </div>
                 </a>
-        </div>
-    @endforeach
+                @endforeach
+            </div>
 </x-layout>

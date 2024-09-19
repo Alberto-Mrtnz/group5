@@ -58,17 +58,17 @@
 
         @if(count($ratings) == 0)
             <div class="bg-[#e5e7eb] mx-6 p-2 rounded-2xl">
-                <p class="px-3 py-2">There are no reviews available.</p>
+                <p class="px-3 py-2 font-didone">There are no reviews available.</p>
             </div>
         @else
             @foreach($ratings as $rating)
                 <div class="bg-[#e5e7eb] mx-6 p-2 rounded-2xl my-2">
                     <div class="flex space-x-2">
                         <img class="w-10 h-10 rounded-full" src="{{ asset('img/icon.png') }}">
-                        <h1 class="py-1.5 font-bold">{{$rating->user->name}}</h1>
+                        <h1 class="py-1.5 font-bold font-main text-lg">{{$rating->user->name}}</h1>
                     </div>
 
-                    <h1 class="py-1.5 px-8">{{$rating->comment}}</h1>
+                    <h1 class="py-1.5 px-8 font-didone">{{$rating->comment}}</h1>
 
                     <div x-data="{rating: {{ $rating->stars }}, ratings: 5}">
                         <div class="flex space-x-0">
@@ -87,7 +87,7 @@
                         </div>
                     </div>
 
-                    <p class="text-xs text-gray-600 text-end">{{ $rating->created_at }}</p>
+                    <p class="font-didone text-sm text-gray-600 text-end">{{ $rating->created_at }}</p>
                 </div>
             @endforeach
         @endif
@@ -106,7 +106,7 @@
                             } else this.rating = amount;
                         }
                     }">
-                    <label for="" class="block mb-2 font-medium">Rate</label>
+                    <label for="" class="block mb-2 font-medium font-main text-lg">Rate</label>
                     <div class="flex space-x-0">
                         <template x-for="star in ratings" :key="star">
                             <button @click="rate(star)" @mouseover="hoverRating = star"
@@ -130,8 +130,8 @@
                 </div>
             </div>
 
-            <label for="" class="block mb-2 font-medium">Comment</label>
-            <textarea class="box-content h-6 px-1 py-3 italic bg-gray-200 rounded-lg w-full" name="comment" placeholder="Enter your information"></textarea>
+            <label for="" class="block mb-2 font-medium font-main text-lg">Comment</label>
+            <textarea class="font-didone box-content h-6 px-1 py-3 italic bg-gray-200 rounded-lg w-full" name="comment" placeholder="Enter your information"></textarea>
 
             <div class="pb-12">
                 <x-buttom type="submit">Add review</x-buttom>

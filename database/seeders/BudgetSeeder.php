@@ -40,6 +40,16 @@ class BudgetSeeder extends Seeder
                 'total_price' => 123.00,
                 'user_id' => $users->random()
             ],
+            [
+                'name' => "New year",
+                'total_price' => 108.00,
+                'user_id' => $users->random()
+            ],
+            [
+                'name' => "Angel's birthday",
+                'total_price' => 180.00,
+                'user_id' => $users->random()
+            ],
         ];
 
         Budget::factory(count($budgets))->sequence(fn ($sqn) => $budgets[$sqn->index])->create();

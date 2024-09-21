@@ -21,16 +21,25 @@
 
         <div class="grid grid-cols-3 my-12 mx-12 gap-x-4">
             @foreach($tableros as $tablero)
-                <div class="bg-eventi-gris py-4 rounded-md">
+            <div class="bg-eventi-gris py-4 rounded-md">
                     <a href="{{ route('budgets.details', $tablero->id) }}">
-                        <div class="flex flex-row space-x-1 justify-center items-center">
-                            <div class="">
-                                <img src="{{ asset('img/Home.jpeg') }}" class="w-52" id="img">
-                            </div>
-                            <div class="space-y-1">
-                                <img src="{{ asset('img/animacion.jpg') }}" class="w-28" id="img">
-                                <img src="{{ asset('img/salones-para-eventos.png') }}" class="w-28" id="img">
-                            </div>
+                        <div class="grid grid-cols-2 justify-center items-center">
+                            @foreach ($tablero->budgetItems->splice(0,3) as $item)
+                                @if ($loop->index == 0)
+                                    <div class="col-start-1">
+                                        <img src='/img/supplies/{{ $item->supply->img }}' class="w-52" id="img">
+                                    </div>
+                                @endif
+                                <div class="flex flex-col">
+                                    @if ($loop->index == 1)
+                                        <img src='/img/supplies/{{ $item->supply->img }}' class="w-28" id="img">
+                                    @endif
+
+                                    @if ($loop->index == 2)
+                                        <img src='/img/supplies/{{ $item->supply->img}}' class="w-28" id="img">
+                                    @endif
+                                </div>
+                            @endforeach
                         </div>
 
                         <div class="font-main text-xl ml-4">

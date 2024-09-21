@@ -327,6 +327,84 @@ class RatingSeeder extends Seeder
                 'user_id' => $users->random(),
                 'supply_id' => $supplies->random(),
             ],
+            [
+                'comment' => 'I hired this service for my birthday and I could not be happier. Everything was perfect. The team took care of every detail and made the day unforgettable, highly recommended!',
+                'stars' => 5,
+                'user_id' => $users->random(),
+                'supply_id' => $supplies->random(),
+            ],
+            [
+                'comment' => 'I had a small family reunion and decided to hire the service. Their customer service was exceptional and they knew how to capture the essence of what I wanted. I would definitely repeat the experience.',
+                'stars' => 5,
+                'user_id' => $users->random(),
+                'supply_id' => $supplies->random(),
+            ],
+            [
+                'comment' => 'I used this service to organize an intimate wedding. The planner was incredibly professional and took care of all logistical aspects. I felt at ease knowing I was in good hands. The guests could not stop complimenting the decorations.',
+                'stars' => 5,
+                'user_id' => $users->random(),
+                'supply_id' => $supplies->random(),
+            ],
+            [
+                'comment' => 'For a work conference, I decided to count on them. Although there were some setbacks, the team was able to resolve them quickly and the event went well. I appreciate their dedication and adaptability.',
+                'stars' => 4,
+                'user_id' => $users->random(),
+                'supply_id' => $supplies->random(),
+            ],
+            [
+                'comment' => 'I contacted them for my sons graduation party and it was a great decision. Everything went off without a hitch, and my son and his friends had a great time.',
+                'stars' => 5,
+                'user_id' => $users->random(),
+                'supply_id' => $supplies->random(),
+            ],
+            [
+                'comment' => 'I was looking for something simple for a baby shower and this service exceeded my expectations. All the guests felt at ease and enjoyed themselves very much.',
+                'stars' => 5,
+                'user_id' => $users->random(),
+                'supply_id' => $supplies->random(),
+            ],
+            [
+                'comment' => 'We organized a surprise party and I cannot thank the team enough. They were so creative and made sure everything was a success. The surprise was total and the guests had an amazing time, thank you for making everything so special!',
+                'stars' => 5,
+                'user_id' => $users->random(),
+                'supply_id' => $supplies->random(),
+            ],
+            [
+                'comment' => 'For our anniversary, we decided to have an intimate dinner. They took care of every detail. They created a romantic atmosphere that exceeded our expectations. Definitely a memorable experience.',
+                'stars' => 5,
+                'user_id' => $users->random(),
+                'supply_id' => $supplies->random(),
+            ],
+            [
+                'comment' => 'Unfortunately, my experience was very disappointing. The service arrived late and what they performed was nothing like what we discussed. The party ended up being a shambles. I would not recommend it.',
+                'stars' => 1,
+                'user_id' => $users->random(),
+                'supply_id' => $supplies->random(),
+            ],
+            [
+                'comment' => 'Hosting a baby shower with this service was more stressful than I expected. Although some things went well, there were several mistakes. Mediocre overall.',
+                'stars' => 2,
+                'user_id' => $users->random(),
+                'supply_id' => $supplies->random(),
+            ],
+            [
+                'comment' => 'The surprise party I planned was not so surprising due to the lack of organization. The team did not communicate well and there was confusion about the time. Although the guests enjoyed themselves, I was dissatisfied with the service.',
+                'stars' => 3,
+                'user_id' => $users->random(),
+                'supply_id' => $supplies->random(),
+            ],
+            [
+                'comment' => 'I had a mixed experience. Some aspects were good, but others were a big disappointment. Some things were not done as we had agreed. I do not know if I would trust them again for another event.',
+                'stars' => 3,
+                'user_id' => $users->random(),
+                'supply_id' => $supplies->random(),
+            ],
+            [
+                'comment' => 'I was a little disappointed with the service. Although some aspects were pleasant, there was a lack of attention to important details. I think they could do a lot better in communication and planning.',
+                'stars' => 4,
+                'user_id' => $users->random(),
+                'supply_id' => $supplies->random(),
+            ],
         ];
 
         Rating::factory(count($ratings))->sequence(fn ($sequence) => $ratings[$sequence->index])->create();
